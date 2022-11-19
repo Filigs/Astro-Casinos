@@ -17,15 +17,17 @@ module.exports = {
         dark: "#111827", // grey-900
         success: "#2A9D8F",
         alert: "#E9C46A",
-        alert: "#F4A261",
-        danger: "#E76F51",
+        danger: "#F4A261",
+        cta: "#E76F51",
         info: "#264653",
       },
       witdth: {
-        logo: "239",
+        navLogo: "239",
+        navIcon: "1em",
       },
       height: {
-        logo: "48",
+        navLogo: "48",
+        navIcon: "1em",
       },
       fontSize: {
         navIcon: ["17px", "26px"],

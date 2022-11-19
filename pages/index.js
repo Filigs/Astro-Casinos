@@ -14,12 +14,13 @@ export default function Home() {
         {/* */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <NavBar /> */}
       <main>
-        {/* <NavBar /> */}
-        <div>
-          <section>{/* content here */}</section>
-        </div>
+        <section>{/* Top news */}</section>
+        <section>{/* latest blogs */}</section>
+        <section> {/* bitcoin news */}</section>
       </main>
+      {/* Footer */}
     </div>
   );
 }
