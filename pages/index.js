@@ -6,10 +6,7 @@ export default function Home() {
     <div>
       <Head>
         <title>{titleName}</title>
-        <meta
-          name="description"
-          content="Nuno Filipe Martins, a web developer that uses React technologies to build responsive, lightweight and UX friendly apps or websites"
-        />
+        <meta name="description" content="TO BE WRITEN" />
 
         {/* */}
         <link rel="icon" href="/favicon.ico" />
