@@ -1,0 +1,15 @@
+.cryptoSlideLeft {
+  animation: cryptoSlideLeft 1s linear 1s infinite running;
+}
+
+@keyframes cryptoSlideLeft {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
