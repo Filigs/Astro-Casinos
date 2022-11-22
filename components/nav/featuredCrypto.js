@@ -52,13 +52,14 @@ export default function FeaturedCrypto() {
             styles.cryptoSlide +
             " list-disc md:list-none text-xs md:animate-none"
           }
+          key={title}
         >
           <li>
             <span className="font-medium list-disc">{title}</span>
             <span className="font-normal text-gray-400">{" 24h"}</span>:{" "}
             <span className="font-medium"> </span>
             <span className="font-medium">
-              {percentage > 0 ? (
+              {percentage < 0 ? (
                 <span className="text-cta">
                   {"$" + price + " (" + percentage + "%" + ")"}
                 </span>
