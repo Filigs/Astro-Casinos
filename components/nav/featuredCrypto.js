@@ -1,5 +1,5 @@
 import Image from "next/image";
-import GeckoLogo from "public/CoinGecko_logo.svg";
+import GeckoLogo from "public/coingecko_logo.png";
 import Coins from "../cryptoRates/navbarRates";
 const assets = [
   {
