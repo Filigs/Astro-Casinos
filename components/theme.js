@@ -10,6 +10,7 @@ const ThemeSwitch = () => {
   // When mounted on client, now we can show the UI
   if (!mounted) return null;
   // check theme
+
   function isDark() {
     return theme === "dark";
   }
@@ -18,7 +19,7 @@ const ThemeSwitch = () => {
       id="switch"
       onClick={() => setTheme(isDark() ? "light" : "dark")}
       aria-label="Theme toggle"
-      className="p-2"
+      className=""
     >
       <span className="">
         {isDark() ? <BsFillSunFill /> : <BsFillMoonFill />}

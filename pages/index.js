@@ -1,7 +1,7 @@
 import Head from "next/head";
-const titleName = "Astro Casinoss";
+const titleName = "Astro Casinos";
 
-export default function Home() {
+function Home() {
   return (
     <div>
       <Head>
@@ -21,3 +21,16 @@ export default function Home() {
     </div>
   );
 }
+
+// export async function getServerSideProps() {
+//   const res = await fetch(
+//     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin"
+//   );
+
+//   const data = await res.json();
+//   console.log(data);
+
+//   return { props: { data } };
+// }
+
+export default Home;
