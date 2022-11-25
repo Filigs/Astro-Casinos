@@ -1,4 +1,6 @@
-import styles from "/styles/nav.module.css";
+import Image from "next/image";
+import GeckoLogo from "public/coingecko_logo.png";
+import Coins from "../cryptoRates/navbarRates";
 const assets = [
   {
     id: 0,
@@ -40,38 +42,29 @@ const assets = [
 
 export default function FeaturedCrypto() {
   return (
-    <section
-      key={assets.id}
-      className={
-        "flex space-x-6 justify-center w-full overflow-hidden whitespace-nowrap text-justify align-middle p-4 transition-all text-dark mx-4"
-      }
-    >
-      {assets.map(({ title, price, percentage }) => (
-        <ul
-          className={
-            styles.cryptoSlide +
-            " list-disc md:list-none text-xs md:animate-none"
-          }
-          key={title}
-        >
-          <li>
-            <span className="font-medium list-disc">{title}</span>
-            <span className="font-normal text-gray-400">{" 24h"}</span>:{" "}
-            <span className="font-medium"> </span>
-            <span className="font-medium">
-              {percentage < 0 ? (
-                <span className="text-cta">
-                  {"$" + price + " (" + percentage + "%" + ")"}
-                </span>
-              ) : (
-                <span className="text-success">
-                  {"$" + price + " (" + percentage + "%" + ")"}
-                </span>
-              )}
-            </span>
-          </li>
-        </ul>
-      ))}
-    </section>
+    <div className="block mx-8">
+      <section
+        className={
+          "grid-flow-col overflow-hidden whitespace-nowrap text-justify align-middle md:transition-all text-dark mx-4"
+        }
+      >
+        <Coins />
+      </section>
+      <section className="justify-center">
+        <p className="flex justify-center font-extralight items-center">
+          <span className="m-4">
+            <Image
+              src={GeckoLogo}
+              alt={"logo"}
+              className="w-5 h-5"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              // className={"text-center"}
+            />
+          </span>
+          <span className="m-4"> {"Data provided by CoinGecko"}</span>
+        </p>
+      </section>
+    </div>
   );
 }

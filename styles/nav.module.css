@@ -1,5 +1,5 @@
 .cryptoSlideLeft {
-  animation: cryptoSlideLeft 1s linear 1s infinite running;
+  animation: cryptoSlideLeft 60s linear 1s infinite running;
 }
 
 @keyframes cryptoSlideLeft {
