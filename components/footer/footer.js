@@ -4,31 +4,31 @@ import { GrFacebook, GrInstagram, GrTwitter } from "react-icons/gr";
 import {} from "react-icons/fa";
 export default function Footer() {
   return (
-    <div class="absolute mx-auto min-w-full max-w-full inset-x-0 bottom-0">
-      <footer class="p-4 bg-neutral-900 sm:p-6 dark:bg-gray-800">
-        <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com" class="flex items-center">
+    <div className="relative mx-auto min-w-full max-w-full inset-x-0 bottom-0">
+      <footer className="p-4 bg-neutral-900 sm:p-6 dark:bg-gray-800">
+        <div className="md:flex md:justify-between">
+          <div className="mb-6 md:mb-0">
+            <a href="https://flowbite.com" className="flex items-center">
               <img
                 src="https://flowbite.com/docs/images/logo.svg"
-                class="mr-3 h-8"
+                className="mr-3 h-8"
                 alt="FlowBite Logo"
               />
-              <span class="self-center text-2xl font-semibold text-white whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold text-white whitespace-nowrap dark:text-white">
                 Flowbite
               </span>
             </a>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Resources
               </h2>
-              <ul class="text-white dark:text-gray-400">
-                <li class="mb-4">
+              <ul className="text-white dark:text-gray-400">
+                <li className="mb-4">
                   <a
                     href="https://flowbite.com"
-                    class="font-light hover:underline"
+                    className="font-light hover:underline"
                   >
                     Flowbite
                   </a>
@@ -36,7 +36,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://tailwindcss.com/"
-                    class="font-light hover:underline"
+                    className="font-light hover:underline"
                   >
                     Tailwind CSS
                   </a>
@@ -44,14 +44,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Follow us
               </h2>
-              <ul class="text-white dark:text-gray-400">
-                <li class="mb-4">
+              <ul className="text-white dark:text-gray-400">
+                <li className="mb-4">
                   <a
                     href="https://github.com/themesberg/flowbite"
-                    class="font-light hover:underline "
+                    className="font-light hover:underline "
                   >
                     Github
                   </a>
@@ -59,7 +59,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="https://discord.gg/4eeurUVvTy"
-                    class="font-light hover:underline"
+                    className="font-light hover:underline"
                   >
                     Discord
                   </a>
@@ -67,17 +67,17 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
                 Legal
               </h2>
-              <ul class="text-white dark:text-gray-400">
-                <li class="mb-4">
-                  <a href="#" class="font-light hover:underline">
+              <ul className="text-white dark:text-gray-400">
+                <li className="mb-4">
+                  <a href="#" className="font-light hover:underline">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="font-light hover:underline">
+                  <a href="#" className="font-light hover:underline">
                     Terms &amp; Conditions
                   </a>
                 </li>
@@ -85,30 +85,30 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div>
-          <p class="my-6 text-white font-extralight">
+          <p className="my-6 text-white font-extralight">
             {"Please note that our"}
-            <a href="#" class="text-success hover:underline font-medium">
+            <a href="#" className="text-success hover:underline font-medium">
               {"privacy policy"}
             </a>
             {","}
-            <a href="#" class="text-success hover:underline font-medium">
+            <a href="#" className="text-success hover:underline font-medium">
               {"terms of use"}
             </a>
             {","}
-            <a href="#" class="text-success hover:underline font-medium">
+            <a href="#" className="text-success hover:underline font-medium">
               {"cookies"}
             </a>
             {", and "}
-            <a href="#" class="text-success hover:underline font-medium">
+            <a href="#" className="text-success hover:underline font-medium">
               {"do not sell my personal information"}
             </a>
             {" has been updated"}.
             {
               "The leader in news and information on cryptocurrency, digital assets and the future of money, COMPANY is a media outlet that strives for the highest journalistic standards and abides by a"
             }{" "}
-            <a href="#" class="text-success hover:underline font-medium">
+            <a href="#" className="text-success hover:underline font-medium">
               {"strict set of editorial policies"}
             </a>
             {". COMPANY is an independent operating subsidiary of "}
@@ -116,7 +116,7 @@ export default function Footer() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-success hover:underline font-medium"
+              className="text-success hover:underline font-medium"
             >
               {"Digital Currency Group"}
             </a>
@@ -125,7 +125,7 @@ export default function Footer() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-success hover:underline font-medium"
+              className="text-success hover:underline font-medium"
             >
               {"cryptocurrencies"}
             </a>
@@ -134,7 +134,7 @@ export default function Footer() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-success hover:underline font-medium"
+              className="text-success hover:underline font-medium"
             >
               {"startups"}
             </a>
@@ -145,7 +145,7 @@ export default function Footer() {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-success hover:underline font-medium"
+              className="text-success hover:underline font-medium"
             >
               {"stock appreciation rights"}
             </a>
@@ -154,34 +154,34 @@ export default function Footer() {
             }
           </p>
         </div>
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-white sm:text-center dark:text-gray-400">
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <span className="text-sm text-white sm:text-center dark:text-gray-400">
             © 2022{" "}
-            <a href="#" class="hover:underline">
+            <a href="#" className="hover:underline">
               Placeholder™
             </a>
             . All Rights Reserved.
           </span>
-          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-            <a href="#" class="text-white dark:hover:text-white">
+          <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <a href="#" className="text-white dark:hover:text-white">
               <GrFacebook
-                class="w-5 h-5"
+                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               />
             </a>
-            <a href="#" class="text-white dark:hover:text-white">
+            <a href="#" className="text-white dark:hover:text-white">
               <GrInstagram
-                class="w-5 h-5"
+                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
               />
             </a>
-            <a href="#" class="text-white dark:hover:text-white">
+            <a href="#" className="text-white dark:hover:text-white">
               <GrTwitter
-                class="w-5 h-5"
+                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"

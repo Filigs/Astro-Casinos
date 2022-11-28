@@ -1,15 +1,17 @@
-.cryptoSlideLeft {
-  animation: cryptoSlideLeft 60s linear 1s infinite running;
-}
-
-@keyframes cryptoSlideLeft {
-  from {
-    margin-left: 100%;
-    width: 300%;
+@media only screen and (max-width: 1279px) {
+  .cryptoSlideLeft {
+    animation: cryptoSlideLeft 60s linear 1s infinite running;
   }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+  @keyframes cryptoSlideLeft {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 }

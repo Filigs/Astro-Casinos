@@ -7,7 +7,9 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       <FeaturedCrypto />
-      <main>{children}</main>
+      <main className="bg-white mb-8 max-w-screen-lg lg:mx-auto rounded-lg shadow-md">
+        {children}
+      </main>
       <Footer />
     </>
   );

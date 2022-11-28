@@ -1,4 +1,5 @@
 import Head from "next/head";
+import TopCryptoNews from "../components/home/featuredNews";
 const titleName = "Astro Casinos";
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
       </Head>
       {/* <NavBar /> */}
       <main>
-        <section>{/* Top news */}</section>
+        <TopCryptoNews />
         <section>{/* latest blogs */}</section>
         <section> {/* bitcoin news */}</section>
       </main>

@@ -42,27 +42,24 @@ const assets = [
 
 export default function FeaturedCrypto() {
   return (
-    <div className="block mx-8">
+    <div className="grid-flow-row">
       <section
         className={
-          "grid-flow-col overflow-hidden whitespace-nowrap text-justify align-middle md:transition-all text-dark mx-4"
+          "grid-flow-col overflow-hidden whitespace-nowrap text-justify align-middle text-dark lg:mx-auto "
         }
       >
         <Coins />
       </section>
-      <section className="justify-center">
+      <section className="mx-auto">
         <p className="flex justify-center font-extralight items-center">
-          <span className="m-4">
-            <Image
-              src={GeckoLogo}
-              alt={"logo"}
-              className="w-5 h-5"
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              // className={"text-center"}
-            />
-          </span>
-          <span className="m-4"> {"Data provided by CoinGecko"}</span>
+          <Image
+            src={GeckoLogo}
+            alt={"logo"}
+            className="w-5 h-5 "
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+          />
+          {"Data provided by CoinGecko"}
         </p>
       </section>
     </div>
