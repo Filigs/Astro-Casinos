@@ -15,11 +15,11 @@ export default function Coins() {
       <ul
         className={
           styles.cryptoSlideLeft +
-          " list-disc md:list-none text-xs md:animate-none flex place-content-between gap-4"
+          " list-disc md:list-none text-xs lg:animate-none flex place-content-between gap-4"
         }
       >
         <li className="flex">
-          <span className="font-normal text-gray-400">
+          <span className="font-normal text-success">
             {" 24h: " + { dataFetch }}
           </span>
         </li>
