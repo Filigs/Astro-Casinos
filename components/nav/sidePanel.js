@@ -1,3 +1,3 @@
 export default function SidePanel() {
-    return;
+  return <div></div>;
 }

@@ -32,8 +32,8 @@ const articles = [
 export default function TopCryptoNews() {
   const isBreakpoint = ViewportHook(850);
   return (
-    <div className="grid grid-flow-row md:grid-flow-col items-center p-4 duration-150 ">
-      <section className="basis-2/3 p-1">
+    <div className="flex flex-row items-center p-4 duration-150 ">
+      <section className="basis-3/4">
         <Image src={SampleNew} className="" />
       </section>
       <section className="basis-1/4">

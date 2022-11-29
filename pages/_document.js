@@ -50,7 +50,7 @@ class myDocument extends Document {
             `}
         </Script> */}
 
-        <body className="text-dark bg-slate-200 bg-cover antialiased scroll-smooth">
+        <body className="text-dark bg-gray-100 dark:bg-bgDark bg-cover antialiased scroll-smooth">
           <Main />
           <NextScript />
         </body>

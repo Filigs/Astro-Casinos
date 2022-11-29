@@ -51,7 +51,7 @@ export default function FeaturedCrypto() {
         <Coins />
       </section>
       <section className="mx-auto">
-        <p className="flex justify-center font-extralight items-center">
+        <section className="flex justify-center font-extralight items-center mx-auto">
           <Image
             src={GeckoLogo}
             alt={"logo"}
@@ -60,7 +60,7 @@ export default function FeaturedCrypto() {
             viewBox="0 0 24 24"
           />
           {"Data provided by CoinGecko"}
-        </p>
+        </section>
       </section>
     </div>
   );

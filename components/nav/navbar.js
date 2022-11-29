@@ -1,43 +1,44 @@
 // import ThemeSwitch from "./theme";
-import Image from "next/image";
 import Link from "next/link";
-import logo from "/public/logo.svg";
-import { FiSearch } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { ViewportHook } from "../viewportHook";
 import NavLinks from "./navLinks";
-
-const icons = "m-0 font-navIcon width-navIcon height-navIcon text-dark";
+import { icons } from "./icons";
+import { FiSearch } from "react-icons/fi";
+import NavLogo from "./logo";
 
 export default function NavBar() {
+  const isBreakpoint = ViewportHook(850); //mobile viewport
   return (
-    <nav className="bg-light shadow-md shadow-gray-200 sticky lg:sticky min-w-full max-w-full w-full inset-x-0 top-0 z-10">
-      <div className="flex flex-row flex-wrap justify-between items-center p-4 text-center ">
+    <nav className="shadow-md sticky lg:sticky min-w-full max-w-full w-full inset-x-0 top-0 z-10 md:px-2 md:py-1 transition-all duration-150 bg-light dark:bg-light">
+      <>
         {/* Hamburguer Icon (Mobile Menu) */}
-        <section className={icons}>
-          <GiHamburgerMenu alt="Mobile Menu" className={icons} />
-        </section>
-        {/* logo */}
-        <section className="overflow-auto justify-center">
-          <Link href="/" passHref>
-            <Image
-              src={logo}
-              alt="Logo"
-              priority="true"
-
-              // width={40}
-              // height={40}
-            />
-          </Link>
-        </section>
-        {/* search */}
-
-        <section className={icons}>
-          <FiSearch alt="Search" />
-        </section>
-      </div>
-      <section>
-        <NavLinks />
-      </section>
+        {isBreakpoint ? (
+          <div className="flex justify-between flex-nowrap items-center gap-2">
+            <>
+              <GiHamburgerMenu alt="Mobile Menu" className={icons} />
+            </>
+            <>
+              <Link href="/" passHref>
+                <NavLogo />
+              </Link>
+            </>
+            <>
+              <FiSearch className={icons} alt="Search" />
+            </>
+          </div>
+        ) : (
+          // breakpoint between mobile and desktop
+          <div className="flex flex-col flex-wrap justify-between items-center px-3 py-1 text-center ">
+            <Link href="/" passHref>
+              <NavLogo />
+            </Link>
+            <>
+              <NavLinks />
+            </>
+          </div>
+        )}
+      </>
     </nav>
   );
 }
