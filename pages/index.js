@@ -15,8 +15,6 @@ function Home() {
       {/* <NavBar /> */}
       <main>
         <TopCryptoNews />
-        <section>{/* latest blogs */}</section>
-        <section> {/* bitcoin news */}</section>
       </main>
       {/* Footer */}
     </div>
