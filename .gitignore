@@ -19,6 +19,9 @@
 .DS_Store
 *.pem
 notes.md
+/public/*.psd
+/public/*.pdd
+/public/*.psdt
 
 # debug
 npm-debug.log*

@@ -20,8 +20,9 @@ module.exports = {
         danger: "#F4A261",
         cta: "#E76F51",
         info: "#264653",
+        bgDark: "#121923", //darkmode fullycrypto
       },
-      witdth: {
+      width: {
         navLogo: "239",
         navIcon: "1em",
       },
@@ -31,6 +32,9 @@ module.exports = {
       },
       fontSize: {
         navIcon: ["17px", "26px"],
+      },
+      screens: {
+        xs: "475px",
       },
     },
     plugins: [require("flowbite/plugin")],

@@ -5,7 +5,7 @@ import {} from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="relative mx-auto min-w-full max-w-full inset-x-0 bottom-0">
-      <footer className="p-4 bg-neutral-900 sm:p-6 dark:bg-gray-800">
+      <footer className="p-4 bg-gray-800 sm:p-6 ">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com" className="flex items-center">
