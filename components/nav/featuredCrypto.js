@@ -45,7 +45,7 @@ export default function FeaturedCrypto() {
     <div className="grid-flow-row">
       <section
         className={
-          "grid-flow-col overflow-hidden whitespace-nowrap text-justify align-middle text-dark lg:mx-auto "
+          "grid-flow-col overflow-hidden whitespace-nowrap text-justify align-middle lg:mx-auto "
         }
       >
         <Coins />
