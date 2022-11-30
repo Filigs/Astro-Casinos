@@ -22,7 +22,11 @@ const ThemeSwitch = () => {
       className=""
     >
       <span className="text-dark">
-        {isDark() ? <BsFillSunFill /> : <BsFillMoonFill />}
+        {isDark() ? (
+          <BsFillSunFill className="text-danger" />
+        ) : (
+          <BsFillMoonFill className="text-gray-500" />
+        )}
       </span>
     </button>
   );

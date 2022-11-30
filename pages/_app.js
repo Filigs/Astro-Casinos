@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import React from "react";
 import Layout from "../components/layout";
+import "../styles/burger.css";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);

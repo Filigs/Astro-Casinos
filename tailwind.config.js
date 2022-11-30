@@ -21,6 +21,7 @@ module.exports = {
         cta: "#E76F51",
         info: "#264653",
         bgDark: "#121923", //darkmode fullycrypto
+        bgContainerDark: "#28313f", //container backgrounds
       },
       width: {
         navLogo: "239",
