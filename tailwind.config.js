@@ -24,12 +24,12 @@ module.exports = {
         bgContainerDark: "#28313f", //container backgrounds
       },
       width: {
-        navLogo: "239",
-        navIcon: "1em",
+        navLogo: "239px",
+        navIcon: "32px",
       },
       height: {
-        navLogo: "48",
-        navIcon: "1em",
+        navLogo: "48px",
+        navIcon: "32px",
       },
       fontSize: {
         navIcon: ["17px", "26px"],

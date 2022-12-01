@@ -1,2 +1,2 @@
 export const icons =
-  "m-0 font-navIcon width-navIcon height-navIcon text-dark text-center";
+  "font-navIcon width-navIcon height-navIcon text-dark dark:text-light text-center";
