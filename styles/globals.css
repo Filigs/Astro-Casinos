@@ -5,6 +5,13 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Alexandria", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 /* main {
   height: 100%;

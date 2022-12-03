@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
-import React from "react";
 import Layout from "../components/layout";
-import "../styles/burger.css";
+import React from "react";
 
 function MyApp({ Component, pageProps }) {
-  const getLayout = Component.getLayout || ((page) => page);
+  const getLayout = Component.getLayout || ((page) => page); //layout.js
+
   return getLayout(
     <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
       <Layout>

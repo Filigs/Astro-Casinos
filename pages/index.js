@@ -1,8 +1,9 @@
 import Head from "next/head";
 import TopCryptoNews from "../components/home/featuredNews";
-const titleName = "Astro Casinos";
 
 function Home() {
+  const titleName = "Astro Casinos";
+
   return (
     <div>
       <Head>
