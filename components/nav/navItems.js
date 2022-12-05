@@ -2,6 +2,7 @@ export const links = [
   {
     id: 0,
     title: "Latest News",
+    href: "/news",
   },
   {
     id: 1,

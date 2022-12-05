@@ -22,6 +22,7 @@ module.exports = {
         info: "#264653",
         bgDark: "#121923", //darkmode fullycrypto
         bgContainerDark: "#28313f", //container backgrounds
+        burgerHover: "#343078",
       },
       width: {
         navLogo: "239px",
@@ -36,6 +37,7 @@ module.exports = {
       },
       screens: {
         xs: "475px",
+        mobile: "850px",
       },
     },
     plugins: [require("flowbite/plugin")],

@@ -1,7 +1,6 @@
 import lightLogo from "/public/logo.svg";
 // import darkLogo from "/public/logoDark.svg";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 
 export default function NavLogo() {
   //   const { resolvedTheme } = useTheme();
