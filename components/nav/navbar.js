@@ -29,7 +29,10 @@ export default function NavBar() {
       <div className="">
         {isBreakpoint ? (
           <div className="grid grid-cols-3 items-center justify-between ">
-            <div ref={node} className="p-2 items-center">
+            {
+              <Burger />
+
+              /* <div ref={node} className="p-2 items-center">
               {navbarOpen ? (
                 <button
                   onClick={closeMenu}
@@ -50,7 +53,8 @@ export default function NavBar() {
                 </button>
               )}
               <Menu />
-            </div>
+            </div> */
+            }
             <section className="scale-125">
               <Link href="/" passHref>
                 <Image src={NavLogo} alt="Nav logo" />
