@@ -1,7 +1,7 @@
 // import Socials from "./socials";
 // import Link from "next/link";
 import { GrFacebook, GrInstagram, GrTwitter } from "react-icons/gr";
-import { items } from "./footeritems";
+import { items } from "./footerItems";
 import Link from "next/link";
 export default function Footer() {
   const itemList = items.map((item) => {
