@@ -23,9 +23,9 @@ const ThemeSwitch = () => {
     >
       <span className="text-dark">
         {isDark() ? (
-          <BsFillSunFill className="text-danger" />
+          <BsFillSunFill className="text-dark dark:text-light" />
         ) : (
-          <BsFillMoonFill className="text-gray-500" />
+          <BsFillMoonFill className="text-dark dark:text-light" />
         )}
       </span>
     </button>
