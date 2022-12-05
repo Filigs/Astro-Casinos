@@ -22,18 +22,15 @@ class myDocument extends Document {
           {/* SEO */}
           <meta name="robots" content="all" />
           {/* social media url preview */}
-          {/* <meta property="og:url" content="AstroCasinos.com" />
-          <meta property="og:title" content="News Feed made for newbies" />
-          <meta property="og:description" content="AstroCasinos.com" />
+          <meta property="og:url" content="VolaCrypto.io" />
+          <meta property="og:title" content="VolaCrypto.io" />
+          <meta property="og:description" content="VolaCrypto.io" />
           <meta property="og:image" content="#" />
-          <meta property="og:site_name" content="News Feed made for newbies" />
+          <meta property="og:site_name" content="VolaCrypto.io" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="#" />
-          <meta
-            name="twitter:creator"
-            content="Nuno Filipe Martins - Freelancer Web Developer"
-          />
-          <meta name="twitter:image" content="#" /> */}
+          <meta name="twitter:site" content="VolaCrypto.io" />
+          <meta name="twitter:creator" content="VolaCrypto.io" />
+          <meta name="twitter:image" content="#" />
         </Head>
         {/* <!-- Google tag (gtag.js) --> */}
         {/* <Script
