@@ -9,7 +9,7 @@ export default function NavLinks() {
     return (
       <li
         key={link.id}
-        className="font-light text-sm whitespace-nowrap text-dark dark:text-dark mx-auto"
+        className="font-light text-sm whitespace-nowrap text-dark dark:text-light mx-auto"
       >
         <Link href="/">{link.title}</Link>
       </li>
