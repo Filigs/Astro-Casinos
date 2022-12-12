@@ -48,7 +48,7 @@ export default function TopCryptoNews() {
         {isBreakpoint ? (
           <></>
         ) : (
-          <div className="font-semibold">{"Hot News"}</div>
+          <div className="font-semibold">{"Latest News"}</div>
         )}
         <ul className="grid grid-flow-row lg:grid-flow-row divide-y-2 divide-solid divide-gray-300">
           {listItems}

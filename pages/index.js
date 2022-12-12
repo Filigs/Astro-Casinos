@@ -1,8 +1,9 @@
 import Head from "next/head";
+import FeaturedGuides from "../components/home/featuredGuides";
 import TopCryptoNews from "../components/home/featuredNews";
 
 function Home() {
-  const titleName = "Astro Casinos";
+  const titleName = "VolaCrypto.io";
 
   return (
     <div>
@@ -13,11 +14,14 @@ function Home() {
         {/* */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <NavBar /> */}
       <main>
-        <TopCryptoNews />
+        <div>
+          <TopCryptoNews />
+        </div>
+        <div>
+          <FeaturedGuides />
+        </div>
       </main>
-      {/* Footer */}
     </div>
   );
 }
