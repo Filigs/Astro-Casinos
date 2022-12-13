@@ -55,11 +55,11 @@ export default function NavBar() {
               <Menu />
             </div> */
             }
-            <section className="scale-125">
+            <div className="scale-125">
               <Link href="/" passHref>
                 <Image src={NavLogo} alt="Nav logo" />
               </Link>
-            </section>
+            </div>
           </div>
         ) : (
           // breakpoint between mobile and desktop

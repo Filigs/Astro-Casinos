@@ -6,13 +6,13 @@ import NavBar from "./nav/navbar";
 
 export default function Layout({ children }) {
   return (
-    <div className="">
+    <>
       <NavBar />
 
-      <main className="bg-white dark:bg-bgContainerDark text-dark dark:text-light mb-8 lg:max-w-screen-lg lg:mx-auto rounded-lg shadow-md h-full grid grid-flow-row mt-2">
+      <main className="bg-transparent dark:bg-transparent mb-8 lg:max-w-screen-lg lg:mx-auto  h-full mt-2 grid grid-flow-row grid-cols-1 auto-rows-auto gap-y-12">
         {children}
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

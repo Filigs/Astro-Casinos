@@ -40,11 +40,11 @@ export default function TopCryptoNews() {
   });
 
   return (
-    <div className="grid grid-flow-row lg:flex lg:flex-row items-center p-4 duration-150 ">
-      <section className="lg:basis-3/4">
+    <section className="grid grid-flow-row lg:flex lg:flex-row items-center p-4 duration-150 bg-light">
+      <div className="lg:basis-3/4">
         <Image src={SampleNew} alt="sample news image" />
-      </section>
-      <section className="lg:basis-1/4">
+      </div>
+      <div className="lg:basis-1/4">
         {isBreakpoint ? (
           <></>
         ) : (
@@ -53,7 +53,7 @@ export default function TopCryptoNews() {
         <ul className="grid grid-flow-row lg:grid-flow-row divide-y-2 divide-solid divide-gray-300">
           {listItems}
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

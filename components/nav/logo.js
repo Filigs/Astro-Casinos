@@ -19,8 +19,8 @@ export default function NavLogo() {
   //   }
 
   return (
-    <section className="mx-auto overflow-auto justify-center">
+    <div className="mx-auto overflow-auto justify-center">
       <Image src={lightLogo} alt="Logo" priority="true" />
-    </section>
+    </div>
   );
 }

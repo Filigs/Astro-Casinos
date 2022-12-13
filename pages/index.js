@@ -15,11 +15,13 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div>
-          <TopCryptoNews />
-        </div>
-        <div>
-          <FeaturedGuides />
+        <div className="grid grid-flow-row grid-cols-1 auto-rows-auto gap-12">
+          <div>
+            <TopCryptoNews />
+          </div>
+          <div>
+            <FeaturedGuides />
+          </div>
         </div>
       </main>
     </div>

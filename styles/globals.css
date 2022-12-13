@@ -29,3 +29,13 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  section {
+    @apply bg-light;
+    @apply dark:bg-bgContainerDark;
+    @apply text-bgContainerDark;
+    @apply dark:text-light;
+    @apply shadow-md;
+  }
+}
