@@ -25,7 +25,7 @@ export default function NavBar() {
 
   // end of side bar
   return (
-    <nav className="shadow-md sticky lg:sticky min-w-full max-w-full w-full inset-x-0 top-0  md:px-2 md:py-2 transition-all duration-150 bg-light dark:bg-bgContainerDark z-20">
+    <nav className="shadow-md dark:shadow-lg sticky lg:sticky min-w-full max-w-full w-full inset-x-0 top-0  md:px-2 md:py-2 transition-all duration-75 bg-bgLight dark:bg-bgDark">
       <div className="">
         {isBreakpoint ? (
           <div className="grid grid-cols-3 items-center justify-between ">

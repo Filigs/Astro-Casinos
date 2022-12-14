@@ -11,7 +11,7 @@ export default function NavLinks() {
         key={link.id}
         className="font-light text-sm whitespace-nowrap text-dark dark:text-light mx-auto"
       >
-        <Link href="/">{link.title}</Link>
+        <Link href={link.href ? link.href : ""}>{link.title}</Link>
       </li>
     );
   });

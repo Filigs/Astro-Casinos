@@ -15,7 +15,7 @@ export default function Footer() {
   console.log();
   return (
     <div className="relative mx-auto min-w-full max-w-full inset-x-0 bottom-0 z-10">
-      <footer className=" p-4 bg-bgContainerDark sm:p-6 ">
+      <footer className=" p-4 bg-footer sm:p-6 ">
         <div className="mb-6 mt-2 md:mb-0">
           <ul
             className={

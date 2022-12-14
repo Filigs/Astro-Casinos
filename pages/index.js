@@ -19,9 +19,9 @@ function Home() {
           <div>
             <TopCryptoNews />
           </div>
-          <div>
-            <FeaturedGuides />
-          </div>
+          {/* <div> */}
+          {/* <FeaturedGuides /> */}
+          {/* </div> */}
         </div>
       </main>
     </div>

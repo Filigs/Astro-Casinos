@@ -6,26 +6,19 @@ export const links = [
   },
   {
     id: 1,
-    title: "Analysis",
-  },
-  {
-    id: 2,
     title: "Guides",
   },
   {
-    id: 3,
-    title: "Interviews",
-  },
-  {
-    id: 4,
-    title: "Podcast",
-  },
-  {
-    id: 5,
+    id: 2,
     title: "Reviews",
   },
   {
-    id: 6,
-    title: "Games",
+    id: 3,
+    title: "Crypto Coins",
+  },
+  {
+    id: 4,
+    title: "Admin",
+    href: "/admin",
   },
 ];
