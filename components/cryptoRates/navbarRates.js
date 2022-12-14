@@ -11,7 +11,7 @@ export default function Coins() {
   }
   /* {"$" + price + " (" + percentage + "%" + ")"} */
   return (
-    <section className="p-4">
+    <div className="p-4">
       <ul
         className={
           styles.cryptoSlideLeft +
@@ -24,6 +24,6 @@ export default function Coins() {
           </span>
         </li>
       </ul>
-    </section>
+    </div>
   );
 }

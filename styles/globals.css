@@ -29,3 +29,26 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* parent element from components */
+  section {
+    @apply bg-light dark:bg-zinc-800;
+    @apply text-dark dark:text-light;
+    @apply shadow-md;
+    @apply lg:py-6 lg:px-5 rounded-lg;
+  }
+  textarea,
+  input {
+    @apply bg-transparent dark:bg-transparent;
+    @apply placeholder-zinc-400;
+    @apply block mx-auto lg:w-full text-sm font-light rounded-lg p-4;
+    @apply outline outline-2 outline-textAreaLight dark:outline-textAreaDark;
+  }
+  label {
+    @apply block bg-transparent text-sm font-light;
+  }
+  button {
+    @apply px-5 py-2.5 mr-2 mb-2 font-medium text-sm outline outline-2 outline-textAreaLight dark:outline-textAreaDark rounded-lg;
+  }
+}

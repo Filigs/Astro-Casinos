@@ -1,19 +1,18 @@
 // import Navbar from "./nav/navbar";
 import Footer from "./footer/footer";
-import FeaturedCrypto from "./nav/featuredCrypto";
+
 import React, { useRef } from "react";
 import NavBar from "./nav/navbar";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <>
       <NavBar />
 
-      <FeaturedCrypto />
-      <main className="bg-white dark:bg-bgContainerDark text-dark dark:text-light mb-8 lg:max-w-screen-lg lg:mx-auto rounded-lg shadow-md h-full">
+      <main className="bg-transparent dark:bg-transparent lg:max-w-screen-lg lg:mx-auto  h-full grid grid-flow-row grid-cols-1 auto-rows-auto gap-y-12 lg:justify-center py-4">
         {children}
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

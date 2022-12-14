@@ -15,11 +15,11 @@ const ThemeSwitch = () => {
     return theme === "dark";
   }
   return (
-    <button
+    <a
       id="switch"
       onClick={() => setTheme(isDark() ? "light" : "dark")}
       aria-label="Theme toggle"
-      className=""
+      className="cursor-pointer"
     >
       <span className="text-dark">
         {isDark() ? (
@@ -28,7 +28,7 @@ const ThemeSwitch = () => {
           <BsFillMoonFill className="text-dark dark:text-light" />
         )}
       </span>
-    </button>
+    </a>
   );
 };
 

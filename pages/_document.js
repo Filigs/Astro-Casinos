@@ -17,7 +17,14 @@ class myDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           />
-
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
           <Script src="..\node_modules\flowbite\dist\flowbite.js" />
           {/* SEO */}
           <meta name="robots" content="all" />
@@ -47,7 +54,7 @@ class myDocument extends Document {
             `}
         </Script> */}
 
-        <body className="text-dark bg-gray-100 dark:bg-bgDark dark:text-light bg-cover antialiased scroll-smooth ">
+        <body className="text-dark bg-bgLight dark:bg-info dark:text-light antialiased scroll-smooth h-full transition-all">
           <Main />
           <NextScript />
         </body>

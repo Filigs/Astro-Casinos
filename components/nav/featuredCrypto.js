@@ -43,15 +43,15 @@ const assets = [
 export default function FeaturedCrypto() {
   return (
     <div className="grid-flow-row">
-      <section
+      <div
         className={
           "grid-flow-col overflow-hidden whitespace-nowrap text-justify align-middle lg:mx-auto "
         }
       >
         <Coins />
-      </section>
-      <section className="mx-auto">
-        <section className="flex justify-center font-extralight items-center mx-auto">
+      </div>
+      <div className="mx-auto">
+        <div className="flex justify-center font-extralight items-center mx-auto">
           <Image
             src={GeckoLogo}
             alt={"logo"}
@@ -60,8 +60,8 @@ export default function FeaturedCrypto() {
             viewBox="0 0 24 24"
           />
           {"Data provided by CoinGecko"}
-        </section>
-      </section>
+        </div>
+      </div>
     </div>
   );
 }
