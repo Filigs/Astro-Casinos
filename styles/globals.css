@@ -33,22 +33,72 @@ a {
 @layer base {
   /* parent element from components */
   section {
-    @apply bg-light dark:bg-zinc-800;
+    @apply bg-bgContainer dark:bg-bgContainerDark;
     @apply text-dark dark:text-light;
-    @apply shadow-md;
-    @apply lg:py-6 lg:px-5 rounded-lg;
+    @apply drop-shadow-md;
+    @apply border-t border-t-slate-100 dark:border-t-slate-800;
+    @apply px-4 py-2 md:px-6 lg:px-8 rounded-md;
+    @apply mb-3 md:mb-4 lg:mb-5;
   }
+  footer {
+    @apply p-4 bg-bgDark dark:bg-slate-300 sm:p-6;
+    @apply border-t border-t-slate-50 dark:border-t-slate-800;
+  }
+
+  nav div ul li {
+    @apply text-dark dark:text-light text-center text-base md:text-lg lg:text-xl font-light px-2 py-2;
+  }
+
+  footer div ul li,
+  footer div span {
+    @apply text-light dark:text-dark text-base md:text-lg lg:text-xl font-medium px-2 py-1;
+  }
+  footer #link {
+    @apply text-light dark:text-dark hover:text-slate-300 dark:hover:text-slate-700 hover:underline;
+  }
+  nav {
+    @apply drop-shadow-md bg-light dark:bg-bgDark z-10 lg:z-0;
+    @apply w-full px-4 py-2;
+    @apply sticky lg:relative inset-x-0 top-0;
+    @apply border-b border-b-slate-100 dark:border-b-slate-800;
+    @apply text-dark dark:text-light;
+  }
+  nav #dark {
+    @apply text-dark dark:text-light text-lg md:text-xl lg:text-xl px-2 py-2 md:border-2 md:rounded-full md:border-dark md:dark:border-light drop-shadow-md;
+  }
+
   textarea,
   input {
-    @apply bg-transparent dark:bg-transparent;
-    @apply placeholder-zinc-400;
-    @apply block mx-auto lg:w-full text-sm font-light rounded-lg p-4;
-    @apply outline outline-2 outline-textAreaLight dark:outline-textAreaDark;
+    @apply bg-transparent dark:bg-transparent drop-shadow-sm;
+    @apply placeholder-slate-400;
+    @apply block mx-auto w-full text-sm font-light rounded-md p-4;
+    @apply outline outline-2 outline-offset-8 outline-textAreaLight dark:outline-textAreaDark;
   }
   label {
-    @apply block bg-transparent text-sm font-light;
+    @apply block bg-transparent text-xl md:text-2xl lg:text-3xl xl:text-4xl font-medium p-4 py-6 lg:pb-10;
   }
   button {
-    @apply px-5 py-2.5 mr-2 mb-2 font-medium text-sm outline outline-2 outline-textAreaLight dark:outline-textAreaDark rounded-lg;
+    @apply px-7 py-3.5 mr-2 mb-2 font-medium text-lg outline-none rounded-md drop-shadow-md;
+    @apply outline-1 outline-slate-100 dark:outline-slate-800;
+  }
+  form#admin {
+    @apply lg:grid lg:grid-flow-row-dense pb-5 lg:pb-10;
+  }
+
+  form#searchBar {
+    @apply text-dark dark:text-light text-center text-base md:text-lg lg:text-xl font-light px-2 py-2 grid grid-flow-col-dense;
+  }
+  /* smooth animations */
+  *,
+  html {
+    @apply lg:transition-transform lg:duration-150;
+  }
+
+  /* nav logo */
+  nav #navLogo {
+    @apply w-full px-4 py-2 text-2xl lg:text-2xl xl:text-3xl tracking-widest text-dark dark:text-light font-black italic font-serif justify-center items-center justify-items-center;
+  }
+  nav #burger {
+    @apply text-2xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
   }
 }
