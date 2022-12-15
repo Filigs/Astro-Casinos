@@ -14,18 +14,19 @@ module.exports = {
     extend: {
       colors: {
         light: "#ffffff", // White
-        bgLight: "#f3f4f6", // Light Background
-        dark: "#111827", // grey-900
+        bgLight: "#e2e8f0", // Light Background
+        dark: "#0f172a", // slate-900
         success: "#2A9D8F", // teal
         alert: "#E9C46A", //amarelo
         danger: "#F4A261", // laranja
         cta: "#E76F51", // peach
         info: "#264653", // teal escuro
-        bgDark: "#27272a", //darkmode fullycrypto
-        bgContainerDark: "#27272a", //container backgrounds
+        bgDark: "#0f172a", //darkmode fullycrypto
+        bgContainer: "#ffffff", // light mode container
+        bgContainerDark: "#1e293b", // dark mode container backgrounds
         burgerHover: "#343078",
-        textAreaLight: "#f4f4f5", // bg <textarea> light
-        textAreaDark: "#3f3f46", // bg <textarea> dark
+        textAreaLight: "#cbd5e1", // outline <textarea> light
+        textAreaDark: "#475569", // outline <textarea> dark
         footer: "#262626", // neutral-900 bg footer
       },
       width: {
