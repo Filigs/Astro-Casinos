@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { ViewportHook } from "../viewportHook";
 import NavLinks from "./navLinks";
-import NavLogo from "/public/logo.svg";
-import Image from "next/image";
 import { useOnClickOutside } from "/components/hooks";
 import React, { useState, useRef } from "react";
 import { HiMenu as Burger, HiOutlineX as CloseBurger } from "react-icons/hi";
@@ -30,7 +28,7 @@ export default function NavBar() {
         {isBreakpoint ? (
           <div className="grid grid-cols-3 items-center justify-between ">
             {
-              <Burger />
+              <Burger id="burger" />
 
               /* <div ref={node} className="p-2 items-center">
               {navbarOpen ? (
@@ -55,18 +53,20 @@ export default function NavBar() {
               <Menu />
             </div> */
             }
-            <div className="scale-125">
+            <div id="navLogo">
               <Link href="/" passHref>
-                <Image src={NavLogo} alt="Nav logo" />
+                VolaCrypto
               </Link>
             </div>
           </div>
         ) : (
           // breakpoint between mobile and desktop
           <div className="flex flex-col flex-wrap justify-between items-center px-3 py-1 text-center ">
-            <Link href="/" passHref>
-              <Image src={NavLogo} alt="Nav logo" />
-            </Link>
+            <div id="navLogo">
+              <Link href="/" passHref>
+                VolaCrypto
+              </Link>
+            </div>
             <>
               <NavLinks />
             </>

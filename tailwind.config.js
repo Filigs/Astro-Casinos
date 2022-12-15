@@ -25,8 +25,8 @@ module.exports = {
         bgContainer: "#ffffff", // light mode container
         bgContainerDark: "#1e293b", // dark mode container backgrounds
         burgerHover: "#343078",
-        textAreaLight: "#cbd5e1", // outline <textarea> light
-        textAreaDark: "#475569", // outline <textarea> dark
+        textAreaLight: "#94a3b8", // outline <textarea> light
+        textAreaDark: "#64748b", // outline <textarea> dark
         footer: "#262626", // neutral-900 bg footer
       },
       width: {
