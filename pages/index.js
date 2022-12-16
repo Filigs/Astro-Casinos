@@ -1,6 +1,7 @@
 import Head from "next/head";
-import FeaturedGuides from "../components/home/featuredGuides";
+// import FeaturedGuides from "../components/home/featuredGuides";
 import TopCryptoNews from "../components/home/featuredNews";
+import LatestNews from "../components/home/latestNews";
 
 function Home() {
   const titleName = "VolaCrypto.io";
@@ -20,7 +21,7 @@ function Home() {
             <TopCryptoNews />
           </div>
           {/* <div> */}
-          {/* <FeaturedGuides /> */}
+          <LatestNews />
           {/* </div> */}
         </div>
       </main>
