@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <>
       <NavBar />
 
-      <main className="bg-transparent dark:bg-transparent lg:max-w-screen-lg lg:mx-auto  h-full grid grid-flow-row grid-cols-1 auto-rows-auto gap-y-12 lg:justify-center py-4">
+      <main className="bg-transparent dark:bg-transparent lg:max-w-screen-lg mx-auto h-full grid grid-cols-1 gap-6 py-4">
         {children}
       </main>
       <Footer />

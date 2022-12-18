@@ -30,27 +30,34 @@ const articles = [
 ];
 
 export default function TopCryptoNews() {
-  const isBreakpoint = ViewportHook(850);
+  const isBreakpoint = ViewportHook(1050);
   const listItems = articles.map((article) => {
     return (
-      <li key={article.id} className="p-4">
+      <li key={article.id} className="p-4 font-light">
         {article.title}
       </li>
     );
   });
 
   return (
-    <section className="grid grid-flow-row lg:flex lg:flex-row items-center p-4 duration-150 bg-light">
-      <div className="lg:basis-3/4">
-        <Image src={SampleNew} alt="sample news image" />
+    <section className="grid grid-cols-1 lg:flex lg:flex-row ">
+      <div className="relative lg:basis-8/12">
+        <Image
+          src={SampleNew}
+          alt="sample news image"
+          className="lg:overflow-auto lg:max-w-full lg:h-auto rounded-lg p-4"
+          fill={isBreakpoint ? false : true}
+          // width={1920}
+          // height={1080}
+        />
       </div>
-      <div className="lg:basis-1/4">
+      <div className="lg:basis-4/12">
         {isBreakpoint ? (
           <></>
         ) : (
-          <div className="font-semibold">{"Latest News"}</div>
+          <div className="font-semibold p-4 lg:text-2xl">{"Latest News"}</div>
         )}
-        <ul className="grid grid-flow-row lg:grid-flow-row divide-y-2 divide-solid divide-gray-300">
+        <ul className="grid grid-flow-row lg:grid-flow-row divide-y-2 divide-solid divide-slate-300 dark:divide-slate-700">
           {listItems}
         </ul>
       </div>
