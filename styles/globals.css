@@ -110,5 +110,6 @@ a {
   div#latestNewsGrid {
     @apply grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto;
     @apply text-dark dark:text-light;
+    @apply drop-shadow-md;
   }
 }
