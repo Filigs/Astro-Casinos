@@ -37,7 +37,8 @@ a {
     @apply text-dark dark:text-light;
     @apply drop-shadow-md;
     @apply border-t border-t-slate-100 dark:border-t-slate-800;
-    @apply px-4 py-2 md:px-6 lg:px-8 rounded-md;
+    /* @apply px-4 py-2 md:px-6 lg:px-8 rounded-md ; */
+    @apply py-1.5 lg:py-3 px-3 lg:px-6 rounded-lg;
     @apply mb-3 md:mb-4 lg:mb-5;
     @apply block;
   }
@@ -107,6 +108,7 @@ a {
   }
 
   div#latestNewsGrid {
-    @apply grid grid-cols-3 gap-4;
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto;
+    @apply text-dark dark:text-light;
   }
 }
