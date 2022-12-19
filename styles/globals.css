@@ -59,7 +59,7 @@ a {
     @apply text-light dark:text-dark hover:text-slate-300 dark:hover:text-slate-700 hover:underline;
   }
   nav {
-    @apply drop-shadow-sm bg-transparent dark:bg-transparent z-10 lg:z-0;
+    @apply drop-shadow-sm bg-bgContainer dark:bg-bgContainerDark z-10 lg:z-0;
     @apply w-full px-4 py-2;
     @apply sticky lg:relative inset-x-0 top-0;
     @apply border-b border-b-borderLight dark:border-b-borderDark;
