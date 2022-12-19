@@ -62,6 +62,7 @@ export default function Avatar({ uid, url, size, onUpload }) {
         <Image
           className="rounded-full"
           src={avatarUrl}
+          id={"avatar"}
           alt="Avatar"
           height={size}
           width={size}
