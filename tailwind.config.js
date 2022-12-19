@@ -6,6 +6,7 @@ module.exports = {
     "./pages/**.{js,ts,jsx,tsx}",
     "./components/**.{js,ts,jsx,tsx}",
     "./components/**/**.{js,ts,jsx,tsx}",
+    "./components/**/**/**.{js,ts,jsx,tsx}",
     "./node_modules/flowbite-react/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html",
@@ -25,8 +26,8 @@ module.exports = {
         bgContainer: "#ffffff", // light mode container
         bgContainerDark: "#1e293b", // dark mode container backgrounds
         burgerHover: "#343078",
-        textAreaLight: "#94a3b8", // outline <textarea> light
-        textAreaDark: "#64748b", // outline <textarea> dark
+        borderLight: "#e2e8f0", // slate-200
+        borderDark: "#334155", // slate-700
         footer: "#262626", // neutral-900 bg footer
       },
       width: {

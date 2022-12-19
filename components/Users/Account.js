@@ -66,7 +66,7 @@ export default function Account({ session }) {
 
   return (
     <section>
-      <div className="block my-4">
+      <div className="block">
         <div className="justify-center">
           <Avatar
             uid={user.id}
@@ -102,16 +102,19 @@ export default function Account({ session }) {
           />
         </div>
       </div>
-      <div className="flex gap-4">
+      <div className="flex py-2 px-4 justify-center">
         <button
-          className="bg-success"
+          className="bg-success dark:bg-success"
           onClick={() => updateProfile({ username, website, avatar_url })}
           disabled={loading}
         >
           {loading ? "Loading ..." : "Update"}
         </button>
 
-        <button className="bg-cta" onClick={() => supabase.auth.signOut()}>
+        <button
+          className="bg-cta dark:bg-cta"
+          onClick={() => supabase.auth.signOut()}
+        >
           Sign Out
         </button>
       </div>
