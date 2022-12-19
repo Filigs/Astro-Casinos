@@ -21,4 +21,9 @@ export const links = [
     title: "Admin",
     href: "/admin",
   },
+  {
+    id: 5,
+    title: "Account Settings",
+    href: "/user",
+  },
 ];
