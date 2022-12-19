@@ -21,17 +21,11 @@ export default function PostNews() {
               <textarea id="newsBody" rows="20" placeholder="Corpo do post" />
             </div>
           </div>
-          <div className="flex flex-row-reverse w-full justify-evenly lg:justify-start pb-10">
-            <button
-              type="button"
-              className=" border-success lg:hover:bg-success transition-colors duration-75"
-            >
+          <div className="flex flex-row-reverse w-full justify-evenly lg:justify-start">
+            <button type="button" className=" bg-success dark:bg-success">
               Submit
             </button>
-            <button
-              type="button"
-              className="border-cta lg:hover:bg-cta transition-colors duration-75"
-            >
+            <button type="button" className="bg-cta dark:bg-cta">
               Preview
             </button>
           </div>

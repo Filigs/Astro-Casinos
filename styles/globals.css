@@ -38,7 +38,7 @@ a {
     @apply drop-shadow-lg;
     @apply border border-slate-200 dark:border-slate-700;
     /* @apply px-4 py-2 md:px-6 lg:px-8 rounded-xl ; */
-    @apply py-1.5 lg:py-3 px-3 lg:px-6 rounded-xl;
+    @apply py-2 lg:py-4 px-3 lg:px-6 rounded-xl;
     @apply mb-3 md:mb-4 lg:mb-5;
     @apply block;
   }
@@ -48,7 +48,7 @@ a {
   }
 
   nav div ul li {
-    @apply text-dark dark:text-light text-center text-base xl:text-lg 2xl:text-xl font-light px-2 py-2;
+    @apply text-dark dark:text-light text-center text-base xl:text-lg 2xl:text-xl font-light px-2 py-2 hover:underline;
   }
 
   footer div ul li,
@@ -87,7 +87,7 @@ a {
     @apply block mx-auto w-full text-sm font-light p-4;
   }
   label {
-    @apply block bg-transparent text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal py-2 px-4 text-dark dark:text-light;
+    @apply block bg-transparent text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal py-2 px-4 mb-4 text-dark dark:text-light;
   }
 
   button {
