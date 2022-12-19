@@ -22,10 +22,16 @@ export default function PostNews() {
             </div>
           </div>
           <div className="flex flex-row-reverse w-full justify-evenly lg:justify-start pb-10">
-            <button type="button" className="bg-success">
+            <button
+              type="button"
+              className=" border-success lg:hover:bg-success transition-colors duration-75"
+            >
               Submit
             </button>
-            <button type="button" className="bg-cta">
+            <button
+              type="button"
+              className="border-cta lg:hover:bg-cta transition-colors duration-75"
+            >
               Preview
             </button>
           </div>

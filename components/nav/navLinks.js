@@ -12,11 +12,11 @@ export default function NavLinks() {
     );
   });
   return (
-    <div className="grid grid-flow-col-dense text-lg justify-around overflow-hidden whitespace-nowrap text-center items-center align-middle p-4 w-full">
+    <div className="flex justify-around overflow-hidden whitespace-nowrap text-center items-center align-middle px-4 py-2 w-full ">
       <div id="dark">
         <ThemeSwitch />
       </div>
-      <div className="">
+      <div>
         <ul className={"grid grid-flow-col items-center"}>{listItems}</ul>
       </div>
 

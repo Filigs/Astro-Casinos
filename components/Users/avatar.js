@@ -57,10 +57,10 @@ export default function Avatar({ uid, url, size, onUpload }) {
   };
 
   return (
-    <div className="block text-center mx-auto">
+    <div className="grid justify-center items-center text-center mx-auto">
       {avatarUrl ? (
         <Image
-          className="rounded-full"
+          className="rounded-full mb-2 lg:mb-4"
           src={avatarUrl}
           id={"avatar"}
           alt="Avatar"
@@ -68,10 +68,10 @@ export default function Avatar({ uid, url, size, onUpload }) {
           width={size}
         />
       ) : (
-        <div style={{ height: size, width: size }} />
+        <div />
       )}
-      <div style={{ width: size }}>
-        <button htmlFor="single" className="bg-success">
+      <div>
+        <button htmlFor="single">
           {uploading ? "Uploading ..." : "Upload"}
         </button>
         <input

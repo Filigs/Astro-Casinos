@@ -9,7 +9,7 @@ export default function SearchBar() {
         </label>
         <div className="relative">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-            <FiSearch />
+            <FiSearch className="text-borderLight dark:text-borderDark" />
           </div>
           <input
             type="text"

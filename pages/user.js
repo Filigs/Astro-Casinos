@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Account from "../components/Users/Account";
-import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
+import { Auth } from "@supabase/auth-ui-react";
 import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
 function ProfilePage() {
   const titleName = "VolaCrypto.io - ProfilePage";
@@ -16,13 +16,9 @@ function ProfilePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="container" style={{ padding: "50px 0 100px 0" }}>
+        <div>
           {!session ? (
-            <Auth
-              supabaseClient={supabase}
-              appearance={{ theme: ThemeSupa }}
-              theme="dark"
-            />
+            <Auth supabaseClient={supabase} />
           ) : (
             <Account session={session} />
           )}
