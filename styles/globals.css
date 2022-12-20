@@ -38,7 +38,7 @@ a {
     @apply drop-shadow-lg;
     @apply border border-slate-200 dark:border-slate-700;
     /* @apply px-4 py-2 md:px-6 lg:px-8 rounded-xl ; */
-    @apply py-2 lg:py-4 px-3 lg:px-6 rounded-xl;
+    @apply px-3 py-2 lg:py-4 lg:px-6 rounded-xl;
     @apply mb-3 md:mb-4 lg:mb-5;
     @apply mx-4;
     @apply gap-4;
@@ -50,35 +50,35 @@ a {
   }
 
   nav div ul li {
-    @apply text-dark dark:text-light text-center text-base xl:text-lg 2xl:text-xl font-light px-2 py-2 hover:underline;
+    @apply px-2 py-2 text-base font-light text-center text-dark dark:text-light xl:text-lg 2xl:text-xl hover:underline;
   }
 
   footer div ul li,
   footer div span {
-    @apply text-light dark:text-dark text-base xl:text-lg font-medium px-2 py-1;
+    @apply px-2 py-1 text-base font-medium text-light dark:text-dark xl:text-lg;
   }
   footer #link {
     @apply text-light dark:text-dark hover:text-slate-300 dark:hover:text-slate-700 hover:underline;
   }
   nav {
-    @apply drop-shadow-sm bg-bgContainer dark:bg-bgContainerDark z-10 lg:z-0;
+    @apply z-10 drop-shadow-sm bg-bgContainer dark:bg-bgContainerDark lg:z-0;
     @apply w-full px-4 py-2;
-    @apply sticky lg:relative inset-x-0 top-0;
+    @apply sticky inset-x-0 top-0 lg:relative;
     @apply border-b border-b-borderLight dark:border-b-borderDark;
     @apply text-dark dark:text-light;
   }
   nav #dark {
-    @apply text-dark dark:text-light text-base lg:text-lg xl:text-xl px-2 py-2 md:border-2 md:rounded-full md:border-dark md:dark:border-light;
+    @apply px-2 py-2 text-base text-dark dark:text-light lg:text-lg xl:text-xl md:border-2 md:rounded-full md:border-dark md:dark:border-light;
   }
   /* Need to apply rounded-xl whenever I get dynamic images 
   #newsBanner {
-    @apply rounded-none bg-transparent;
+    @apply bg-transparent rounded-none;
   } */
   textarea {
     @apply bg-transparent dark:bg-transparent;
     @apply placeholder-slate-400;
     @apply border-0;
-    @apply block mx-auto w-full text-sm font-light rounded-xl p-4;
+    @apply block w-full p-4 mx-auto text-sm font-light rounded-xl;
     @apply outline outline-2 outline-offset-8 outline-borderLight dark:outline-borderDark;
   }
   input {
@@ -86,10 +86,10 @@ a {
     @apply placeholder-slate-500;
     @apply border-b-2 border-b-borderLight dark:border-b-borderDark;
     @apply focus:outline-none;
-    @apply block mx-auto w-full text-sm font-light p-4;
+    @apply block w-full p-4 mx-auto text-sm font-light;
   }
   label {
-    @apply block bg-transparent text-lg md:text-xl lg:text-2xl xl:text-3xl font-normal py-2 px-4 mb-4 text-dark dark:text-light;
+    @apply block px-4 py-2 mb-4 text-lg font-normal bg-transparent md:text-xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
   }
 
   button {
@@ -98,11 +98,11 @@ a {
     @apply border border-borderLight dark:border-borderDark;
   }
   form#admin {
-    @apply lg:grid lg:grid-flow-row-dense pb-5 lg:pb-10;
+    @apply pb-5 lg:grid lg:grid-flow-row-dense lg:pb-10;
   }
 
   form#searchBar {
-    @apply text-dark dark:text-light text-center text-base md:text-lg lg:text-xl font-light px-2 py-2 grid grid-flow-col-dense;
+    @apply grid grid-flow-col-dense px-2 py-2 text-base font-light text-center text-dark dark:text-light md:text-lg lg:text-xl;
   }
   /* smooth animations */
   *,
@@ -112,14 +112,14 @@ a {
 
   /* nav logo */
   nav #navLogo {
-    @apply w-full px-4 py-2 text-2xl lg:text-2xl xl:text-3xl tracking-widest text-dark dark:text-light font-black italic font-serif justify-center items-center justify-items-center;
+    @apply items-center justify-center w-full px-4 py-2 font-serif text-2xl italic font-black tracking-widest lg:text-2xl xl:text-3xl text-dark dark:text-light justify-items-center;
   }
   nav #burger {
     @apply text-2xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
   }
 
   div#latestNewsGrid {
-    @apply grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto;
+    @apply grid grid-cols-1 gap-4 mx-auto lg:grid-cols-3;
     @apply text-dark dark:text-light;
     @apply drop-shadow-md;
   }
@@ -127,20 +127,20 @@ a {
     @apply border border-slate-200 dark:border-slate-700;
   }
   /* Overlay when opening burger */
-  main.mobileOverlay {
-    @apply h-full w-0 fixed z-10 left-0 top-0 overflow-x-hidden transition-all duration-75;
+  .mobileOverlay {
+    @apply fixed top-0 left-0 z-40 h-screen overflow-x-hidden overflow-y-auto transition-all duration-75 w-80 bg-dark opacity-90;
   }
 
-  main .mobileOverlayContent {
-    @apply relative top-1/4 w-full text-start mt-8;
+  .mobileOverlayContent {
+    @apply relative w-full mt-8 top-1/4 text-start;
   }
 
-  main .mobileOverlayContent ul li {
+  .mobileOverlayContent ul li {
     @apply p-2 text-lg text-dark dark:text-light;
     text-decoration: none;
   }
 
-  main #mobileOverlayContent .closeBurger {
-    @apply absolute top-5 left-11 text-lg md:text-xl lg:text-2xl;
+  main .mobileOverlayContent .closeBurger {
+    @apply absolute text-lg top-5 left-11 md:text-xl lg:text-2xl;
   }
 }

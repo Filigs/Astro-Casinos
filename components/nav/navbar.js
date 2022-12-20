@@ -1,57 +1,20 @@
 import Link from "next/link";
 import { ViewportHook } from "../viewportHook";
 import NavLinks from "./navLinks";
-import { useOnClickOutside } from "/components/hooks";
 import React, { useState, useRef } from "react";
 import { HiMenu as Burger, HiOutlineX as CloseBurger } from "react-icons/hi";
 import Menu from "./Menu";
 
 export default function NavBar() {
   const isBreakpoint = ViewportHook(850); //mobile viewport
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const node = useRef();
-  const closeMenu = () => {
-    document.getElementById("overlay").style.width = "0";
-    setNavbarOpen(false);
-  };
-  // side bar on toggle
-  const handleToggle = () => {
-    document.getElementById("overlay").style.width = "250px";
-    setNavbarOpen((prev) => !prev);
-    return <Menu />;
-  };
-  useOnClickOutside(node, () => setNavbarOpen(false));
 
-  // end of side bar
   return (
-    <nav ref={node}>
+    <nav>
       <div className="">
         {isBreakpoint ? (
           <>
-            <div className="grid grid-cols-3 items-center justify-between ">
-              {navbarOpen ? (
-                <>
-                  <button
-                    onClick={closeMenu}
-                    data-drawer-dismiss="mobileOverlayContent"
-                    aria-controls="mobileOverlayContent"
-                    type="button"
-                  >
-                    <CloseBurger className="closeBurger" />
-                  </button>
-                </>
-              ) : (
-                <>
-                  <button
-                    data-drawer-target="mobileOverlayContent"
-                    data-drawer-show="mobileOverlayContent"
-                    aria-controls="mobileOverlayContent"
-                    onClick={handleToggle}
-                  >
-                    <Burger className="text-xl" />
-                  </button>
-                </>
-              )}
+            <div className="grid items-center justify-between grid-cols-3 ">
+              {/* <Menu /> */}
             </div>
 
             <div id="navLogo">
@@ -62,7 +25,7 @@ export default function NavBar() {
           </>
         ) : (
           // breakpoint between mobile and desktop
-          <div className="flex flex-col flex-wrap justify-between items-center px-3 py-1 text-center ">
+          <div className="flex flex-col flex-wrap items-center justify-between px-3 py-1 text-center ">
             <div id="navLogo">
               <Link href="/" passHref>
                 VolaCrypto
