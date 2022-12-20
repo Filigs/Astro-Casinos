@@ -8,57 +8,58 @@ import Menu from "./Menu";
 
 export default function NavBar() {
   const isBreakpoint = ViewportHook(850); //mobile viewport
-  // side bar on toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const node = useRef();
   const closeMenu = () => {
-    document.getElementById("nav-drawer").style.width = "0";
+    document.getElementById("overlay").style.width = "0";
     setNavbarOpen(false);
   };
+  // side bar on toggle
   const handleToggle = () => {
-    document.getElementById("nav-drawer").style.width = "250px";
+    document.getElementById("overlay").style.width = "250px";
     setNavbarOpen((prev) => !prev);
+    return <Menu />;
   };
   useOnClickOutside(node, () => setNavbarOpen(false));
 
   // end of side bar
   return (
-    <nav>
+    <nav ref={node}>
       <div className="">
         {isBreakpoint ? (
-          <div className="grid grid-cols-3 items-center justify-between ">
-            {
-              <Burger id="burger" />
-
-              /* <div ref={node} className="p-2 items-center">
+          <>
+            <div className="grid grid-cols-3 items-center justify-between ">
               {navbarOpen ? (
-                <button
-                  onClick={closeMenu}
-                  data-drawer-dismiss="nav-drawer"
-                  aria-controls="nav-drawer"
-                  type="button"
-                >
-                  <CloseBurger className="text-xl" />
-                </button>
+                <>
+                  <button
+                    onClick={closeMenu}
+                    data-drawer-dismiss="mobileOverlayContent"
+                    aria-controls="mobileOverlayContent"
+                    type="button"
+                  >
+                    <CloseBurger className="closeBurger" />
+                  </button>
+                </>
               ) : (
-                <button
-                  data-drawer-target="nav-drawer"
-                  data-drawer-show="nav-drawer"
-                  aria-controls="nav-drawer"
-                  onClick={handleToggle}
-                >
-                  <Burger className="text-xl" />
-                </button>
+                <>
+                  <button
+                    data-drawer-target="mobileOverlayContent"
+                    data-drawer-show="mobileOverlayContent"
+                    aria-controls="mobileOverlayContent"
+                    onClick={handleToggle}
+                  >
+                    <Burger className="text-xl" />
+                  </button>
+                </>
               )}
-              <Menu />
-            </div> */
-            }
+            </div>
+
             <div id="navLogo">
               <Link href="/" passHref>
                 VolaCrypto
               </Link>
             </div>
-          </div>
+          </>
         ) : (
           // breakpoint between mobile and desktop
           <div className="flex flex-col flex-wrap justify-between items-center px-3 py-1 text-center ">

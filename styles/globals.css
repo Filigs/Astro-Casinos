@@ -40,6 +40,8 @@ a {
     /* @apply px-4 py-2 md:px-6 lg:px-8 rounded-xl ; */
     @apply py-2 lg:py-4 px-3 lg:px-6 rounded-xl;
     @apply mb-3 md:mb-4 lg:mb-5;
+    @apply mx-4;
+    @apply gap-4;
     @apply block;
   }
   footer {
@@ -59,7 +61,7 @@ a {
     @apply text-light dark:text-dark hover:text-slate-300 dark:hover:text-slate-700 hover:underline;
   }
   nav {
-    @apply drop-shadow-sm bg-transparent dark:bg-transparent z-10 lg:z-0;
+    @apply drop-shadow-sm bg-bgContainer dark:bg-bgContainerDark z-10 lg:z-0;
     @apply w-full px-4 py-2;
     @apply sticky lg:relative inset-x-0 top-0;
     @apply border-b border-b-borderLight dark:border-b-borderDark;
@@ -120,5 +122,25 @@ a {
     @apply grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto;
     @apply text-dark dark:text-light;
     @apply drop-shadow-md;
+  }
+  div#latestNewsCard {
+    @apply border border-slate-200 dark:border-slate-700;
+  }
+  /* Overlay when opening burger */
+  main.mobileOverlay {
+    @apply h-full w-0 fixed z-10 left-0 top-0 overflow-x-hidden transition-all duration-75;
+  }
+
+  main .mobileOverlayContent {
+    @apply relative top-1/4 w-full text-start mt-8;
+  }
+
+  main .mobileOverlayContent ul li {
+    @apply p-2 text-lg text-dark dark:text-light;
+    text-decoration: none;
+  }
+
+  main #mobileOverlayContent .closeBurger {
+    @apply absolute top-5 left-11 text-lg md:text-xl lg:text-2xl;
   }
 }
