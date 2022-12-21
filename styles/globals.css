@@ -127,20 +127,11 @@ a {
     @apply border border-slate-200 dark:border-slate-700;
   }
   /* Overlay when opening burger */
-  .mobileOverlay {
-    @apply fixed top-0 left-0 z-40 h-screen overflow-x-hidden overflow-y-auto transition-all duration-75 w-80 bg-dark opacity-90;
-  }
 
-  .mobileOverlayContent {
-    @apply relative w-full mt-8 top-1/4 text-start;
+  button.openBurger {
+    @apply relative text-3xl text-center border-0 rounded-xl outline-2 outline-borderLight dark:outline-borderDark;
   }
-
-  .mobileOverlayContent ul li {
-    @apply p-2 text-lg text-dark dark:text-light;
-    text-decoration: none;
-  }
-
-  main .mobileOverlayContent .closeBurger {
-    @apply absolute text-lg top-5 left-11 md:text-xl lg:text-2xl;
+  .drawerText {
+    @apply my-16 text-xl font-bold;
   }
 }

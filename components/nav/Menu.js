@@ -1,61 +1,47 @@
 import Link from "next/link";
 import { links } from "./navItems";
-import React, { useState, useRef } from "react";
-import { useOnClickOutside } from "/components/hooks";
+import React, { useState } from "react";
 import { HiMenu as Burger, HiOutlineX as CloseBurger } from "react-icons/hi";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
 
 export default function Menu() {
-  // Menu hook
-  const [navbarOpen, setNavbarOpen] = useState(false);
-  const node = useRef();
-
-  useOnClickOutside(node, () => setNavbarOpen(false));
-
+  // link list for drawer
+  const itemList = links.map((link) => (
+    <li key={link.title} className="drawerText">
+      <Link href="/">{link.title}</Link>
+    </li>
+  ));
   // toggle
-  const overlay = document.getElementById("mobileOverlay");
-  const openMenu = () => {
-    setNavbarOpen((prev) => !prev);
-    overlay.style.width = "33%";
-    // item list for burger menu
-
-    const itemList = links.map((link) => (
-      <li key={link.title}>
-        <Link href="/" className="gap-1">
-          {link.title}
-        </Link>
-      </li>
-    ));
-    return (
-      <>
-        <div className="mobileOverlay" ref={node}>
-          <div class="mobileOverlayContent">
-            <ul className="grid grid-flow-row">{itemList}</ul>
-          </div>
-        </div>
-      </>
-    );
-  };
-
-  const closeMenu = () => {
-    setNavbarOpen(false);
-    overlay.style.width = "0%";
+  // Menu hook
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
   };
 
   return (
     <>
-      {navbarOpen ? (
-        <>
-          <a onClick={closeMenu} type="button" id="closeMenu">
-            <CloseBurger className="closeBurger" />
-          </a>
-        </>
-      ) : (
-        <>
-          <a onClick={openMenu} type="button" id="openMenu">
-            <Burger className="text-xl" />
-          </a>
-        </>
-      )}
+      <button
+        onClick={toggleDrawer}
+        type="button"
+        className="openBurger"
+        id="openMenu"
+      >
+        <Burger />
+
+        <Drawer
+          open={isOpen}
+          onClose={toggleDrawer}
+          direction="left"
+          enableOverlay="true"
+          zIndex={30}
+          overlayOpacity={0.8}
+        >
+          <>
+            <ul>{itemList}</ul>
+          </>
+        </Drawer>
+      </button>
     </>
   );
 }

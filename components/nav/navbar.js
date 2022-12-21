@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { ViewportHook } from "../viewportHook";
 import NavLinks from "./navLinks";
-import React, { useState, useRef } from "react";
-import { HiMenu as Burger, HiOutlineX as CloseBurger } from "react-icons/hi";
+import ThemeSwitch from "../theme";
+
+import React from "react";
+
 import Menu from "./Menu";
 
 export default function NavBar() {
@@ -13,14 +15,21 @@ export default function NavBar() {
       <div className="">
         {isBreakpoint ? (
           <>
-            <div className="grid items-center justify-between grid-cols-3 ">
-              {/* <Menu /> */}
-            </div>
+            <div className="flex items-center justify-center align-baseline justify-items-center ">
+              <div className="shrink">
+                <Menu />
+              </div>
 
-            <div id="navLogo">
-              <Link href="/" passHref>
-                VolaCrypto
-              </Link>
+              <div className="text-center grow" id="navLogo">
+                <Link href="/" passHref>
+                  VolaCrypto
+                </Link>
+              </div>
+              <div className="shrink">
+                <button className="openBurger outline-0">
+                  <ThemeSwitch />
+                </button>
+              </div>
             </div>
           </>
         ) : (
