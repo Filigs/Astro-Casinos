@@ -6,6 +6,7 @@ export default function LatestNews() {
     return (
       <div
         className="grid grid-cols-2 bg-bgContainer dark:bg-bgContainerDark rounded-lg py-1.5 lg:py-3 px-3 lg:px-6 mx-auto"
+        id="latestNewsCard"
         key={item}
       >
         <div className="block col-span-2 py-2 mx-auto ">

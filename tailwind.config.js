@@ -25,7 +25,6 @@ module.exports = {
         bgDark: "#0f172a", //darkmode fullycrypto
         bgContainer: "#ffffff", // light mode container
         bgContainerDark: "#1e293b", // dark mode container backgrounds
-        burgerHover: "#343078",
         borderLight: "#e2e8f0", // slate-200
         borderDark: "#334155", // slate-700
         footer: "#262626", // neutral-900 bg footer
