@@ -1,4 +1,6 @@
+@import "react-modern-drawer/dist/index.css";
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 html,
 body {
   padding: 0;
@@ -132,6 +134,35 @@ a {
     @apply relative text-3xl text-center border-0 rounded-xl outline-2 outline-borderLight dark:outline-borderDark;
   }
   .drawerText {
-    @apply my-16 text-xl font-bold;
+    @apply my-16 text-xl font-bold text-dark dark:text-light;
   }
+  /* drawer component */
+  .EZDrawer .EZDrawer__checkbox {
+    display: none;
+  }
+  .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__overlay {
+    display: block;
+    opacity: 1;
+  }
+  .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__container {
+    visibility: visible;
+    transform: translate3d(0, 0, 0) !important;
+  }
+  .EZDrawer .EZDrawer__overlay {
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .EZDrawer .EZDrawer__container {
+    position: fixed;
+    visibility: hidden;
+    @apply "bg-borderLight dark:bg-borderDark";
+    @apply "text-dark dark:text-light";
+    transition: all;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
+  /* end of drawer component */
 }
