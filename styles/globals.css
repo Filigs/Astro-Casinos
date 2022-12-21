@@ -62,6 +62,7 @@ a {
   }
   nav {
     @apply z-10 drop-shadow-sm bg-bgContainer dark:bg-bgContainerDark lg:z-0;
+
     @apply w-full px-4 py-2;
     @apply sticky inset-x-0 top-0 lg:relative;
     @apply border-b border-b-borderLight dark:border-b-borderDark;
