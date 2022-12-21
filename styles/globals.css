@@ -89,10 +89,10 @@ a {
     @apply placeholder-slate-500;
     @apply border-b-2 border-b-borderLight dark:border-b-borderDark;
     @apply focus:outline-none;
-    @apply block w-full p-4 mx-auto text-sm font-light;
+    @apply inline-block w-full p-4 mx-auto text-sm font-light;
   }
   label {
-    @apply block px-4 py-2 mb-4 text-lg font-normal bg-transparent md:text-xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
+    @apply inline-block px-4 py-2 mb-4 text-lg font-normal bg-transparent md:text-xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
   }
 
   button {
@@ -160,8 +160,7 @@ a {
   .EZDrawer .EZDrawer__container {
     position: fixed;
     visibility: hidden;
-    @apply "bg-borderLight dark:bg-borderDark";
-    @apply "text-dark dark:text-light";
+
     transition: all;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   }

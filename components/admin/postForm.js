@@ -3,7 +3,7 @@ export default function PostNews() {
     <section>
       <div>
         <form id="admin">
-          <div className="lg:grid lg:grid-flow-row-dense pb-10">
+          <div className="pb-10 lg:grid lg:grid-flow-row-dense">
             <div className="grid pb-10 text-center">
               <label htmlFor="newsTitle" alt="Label for the news title input">
                 Titulo da Noticia
