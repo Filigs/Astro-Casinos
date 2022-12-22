@@ -1,4 +1,3 @@
-@import "react-modern-drawer/dist/index.css";
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html,
@@ -96,9 +95,9 @@ a {
   }
 
   button {
-    @apply px-5 py-2.5 mr-2 mb-2 font-light text-lg rounded-xl;
+    @apply px-5 py-2.5 mr-2 mb-2 font-medium tracking-wide text-lg rounded-xl;
     @apply bg-transparent dark:bg-transparent;
-    @apply border border-borderLight dark:border-borderDark;
+    @apply border-2 border-borderLight dark:border-borderDark;
   }
   form#admin {
     @apply pb-5 lg:grid lg:grid-flow-row-dense lg:pb-10;
