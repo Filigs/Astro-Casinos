@@ -2,6 +2,7 @@ import Head from "next/head";
 // import FeaturedGuides from "../components/home/featuredGuides";
 import TopCryptoNews from "../components/home/featuredNews";
 import LatestNews from "../components/home/latestNews";
+import NewsCarousel from "../components/home/newsCarousel";
 
 function Home() {
   const titleName = "VolaCrypto.io";
@@ -16,15 +17,16 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="grid grid-flow-row grid-cols-1 auto-rows-auto gap-12">
-          <div>
+        <div className="grid grid-flow-row grid-cols-1 gap-12 auto-rows-auto">
+          <>
             <TopCryptoNews />
-          </div>
-          {/* <div> */}
-          <div>
+          </>
+          <>
+            <NewsCarousel />
+          </>
+          <>
             <LatestNews />
-          </div>
-          {/* </div> */}
+          </>
         </div>
       </main>
     </div>
