@@ -7,18 +7,17 @@ export default function NewsCarousel() {
   const isBreakpoint = ViewportHook(850); //mobile
 
   return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel
-        className="border-y-2 border-borderLight dark:border-borderDark"
-        leftControl={false}
-        rightControl={false}
-      >
-        <div className="flex mx-4 rounded-xl">
+    <section className="h-56 lg:h-64 xl:h-80 2xl:h-96 rounded-xl">
+      <Carousel indicators={false}>
+        <div className="flex mx-auto">
           {isBreakpoint ? (
-            <>
+            <div className="mx-auto">
               {/*   mobile */}
-              {NewsCardCarousel}
-            </>
+
+              <>{NewsCardCarousel}</>
+              <>{NewsCardCarousel}</>
+              <>{NewsCardCarousel}</>
+            </div>
           ) : (
             <>
               {/* desktop */}
@@ -30,6 +29,6 @@ export default function NewsCarousel() {
           )}
         </div>
       </Carousel>
-    </div>
+    </section>
   );
 }

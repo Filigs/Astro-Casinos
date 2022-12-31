@@ -110,6 +110,7 @@ a {
   *,
   html {
     @apply lg:transition-transform lg:duration-150;
+    @apply text-dark dark:text-light;
   }
 
   /* nav logo */
@@ -128,16 +129,17 @@ a {
   div#latestNewsCard {
     @apply border border-slate-200 dark:border-slate-700;
   }
-  /* Overlay when opening burger */
+  /* news carousel */
 
   div#newsCardCarousel {
     @apply grid grid-cols-2 rounded-xl;
-    @apply bg-bgContainer dark:bg-bgDark;
+    @apply bg-borderLight dark:bg-borderDark;
     @apply text-dark dark:text-light;
     @apply drop-shadow-lg;
-    @apply mx-4;
+    @apply lg:mx-4;
     @apply items-center justify-center h-full;
   }
+  /* Overlay when opening burger */
 
   button.openBurger {
     @apply relative text-3xl text-center border-0 rounded-xl outline-2 outline-borderLight dark:outline-borderDark;
