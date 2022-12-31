@@ -1,5 +1,20 @@
 import InputNewsBanner from "./form/banner";
+/* inputs
 
+Escolher Link das noticias
+ 
+Escolher autor através de escolha de autor ou login
+ 
+Tags/Labels do Post
+ 
+Titulo
+ 
+Banner
+ 
+Content
+ 
+SEO meta tag content (title tag & meta description)
+*/
 export default function PostNews() {
   return (
     <section>
