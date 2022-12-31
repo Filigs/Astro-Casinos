@@ -2,9 +2,7 @@ import Link from "next/link";
 import { ViewportHook } from "../viewportHook";
 import NavLinks from "./navLinks";
 import ThemeSwitch from "../theme";
-
 import React from "react";
-
 import Menu from "./Menu";
 
 export default function NavBar() {
