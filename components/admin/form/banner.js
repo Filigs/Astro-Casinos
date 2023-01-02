@@ -4,7 +4,7 @@ import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
 export default function InputNewsBanner({ uid, url, size, onUpload }) {
   const supabase = useSupabaseClient();
-  const [avatarUrl, setAvatarUrl] = useState(null);
+  const [bannerUrl, setBannerUrl] = useState(null);
   const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
@@ -20,13 +20,13 @@ export default function InputNewsBanner({ uid, url, size, onUpload }) {
         throw error;
       }
       const url = URL.createObjectURL(data);
-      setAvatarUrl(url);
+      setBannerUrl(url);
     } catch (error) {
       console.log("Error downloading image: ", error);
     }
   }
 
-  const uploadAvatar = async (event) => {
+  const uploadBanner = async (event) => {
     try {
       setUploading(true);
 
@@ -58,33 +58,33 @@ export default function InputNewsBanner({ uid, url, size, onUpload }) {
 
   return (
     <div className="grid items-center justify-center mx-auto text-center">
-      {avatarUrl ? (
+      {bannerUrl ? (
         <Image
           className="mb-2 rounded-full lg:mb-4"
-          src={avatarUrl}
-          id={"avatar"}
-          alt="Avatar"
+          src={bannerUrl}
+          id={"banner"}
+          alt="Banner"
           height={size}
           width={size}
         />
       ) : (
         <div />
       )}
-      <div>
-        <button htmlFor="single">
-          {uploading ? "Uploading ..." : "Upload banner"}
-        </button>
-        <input
-          style={{
-            visibility: "hidden",
-            position: "absolute",
-          }}
-          type="file"
-          id="single"
-          accept="image/*"
-          onChange={uploadAvatar}
-          disabled={uploading}
-        />
+      <div className>
+        <label>{"Banner"}</label>
+        <div className="lg:flex">
+          <input
+            className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-borderLight dark:file:bg-borderDark file:text-dark dark:file:text-light hover:file:bg-slate-200 dark:hover:file:bg-slate-600"
+            type="file"
+            id="single"
+            accept="image/*"
+            onChange={uploadBanner}
+            disabled={uploading}
+          />
+          <button htmlFor="single">
+            {uploading ? "Uploading ..." : "Upload"}
+          </button>
+        </div>
       </div>
     </div>
   );

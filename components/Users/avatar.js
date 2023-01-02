@@ -57,10 +57,10 @@ export default function Avatar({ uid, url, size, onUpload }) {
   };
 
   return (
-    <div className="grid justify-center items-center text-center mx-auto">
+    <div className="grid items-center justify-center mx-auto text-center">
       {avatarUrl ? (
         <Image
-          className="rounded-full mb-2 lg:mb-4"
+          className="mb-2 rounded-full lg:mb-4"
           src={avatarUrl}
           id={"avatar"}
           alt="Avatar"
