@@ -95,13 +95,13 @@ a {
     @apply text-center md:text-xl lg:text-2xl xl:text-3xl text-dark dark:text-light md:text-start;
   }
 
-  /* button {
+  button {
     @apply px-5 py-2.5 m-4 lg:mx-8 font-semibold tracking-wide text-lg lg:text-xl rounded-xl lg:px-8 lg:py-4;
     @apply shadow-lg;
     @apply bg-transparent dark:bg-transparent;
-    @apply border border-borderLight dark:border-borderDark;
+    @apply border-2 border-borderLight dark:border-borderDark;
     @apply hover:bg-borderLight dark:hover:bg-borderDark;
-  } */
+  }
   form#newsForm {
     @apply grid lg:grid-flow-row;
   }
