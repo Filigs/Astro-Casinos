@@ -27,9 +27,9 @@ module.exports = {
         bgDark: "#0f172a", //darkmode fullycrypto
         bgContainer: "#ffffff", // light mode container
         bgContainerDark: "#1e293b", // dark mode container backgrounds
+        placeholderColor: "#64748b", // placeholder color
 
         // CTA
-
         cta: "#E76F51", // peach
         info: "#264653", // teal escuro
         alert: "#E9C46A", //amarelo

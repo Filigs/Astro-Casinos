@@ -8,7 +8,7 @@ import "react-modern-drawer/dist/index.css";
 export default function Menu() {
   // link list for drawer
   const itemList = links.map((link) => (
-    <Link key={link.title} href={"/" + link.title}>
+    <Link key={link.title} href={"/" + link.href}>
       <li className="drawerText">{link.title}</li>
     </Link>
   ));

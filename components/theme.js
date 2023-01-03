@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
+import { ToggleSwitch } from "flowbite-react";
+
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -15,20 +17,21 @@ const ThemeSwitch = () => {
     return theme === "dark";
   }
   return (
-    <a
-      id="switch"
-      onClick={() => setTheme(isDark() ? "light" : "dark")}
-      aria-label="Theme toggle"
-      className="cursor-pointer"
-    >
-      <span className="text-dark">
-        {isDark() ? (
-          <BsFillSunFill className="text-dark dark:text-light" />
-        ) : (
-          <BsFillMoonFill className="text-dark dark:text-light" />
-        )}
-      </span>
-    </a>
+    <div className="text-dark">
+      <ToggleSwitch
+        id="switch"
+        onChange={() => setTheme(isDark() ? "light" : "dark")}
+        aria-label="Theme toggle"
+        label={
+          isDark() ? (
+            <BsFillSunFill className="text-dark dark:text-light" />
+          ) : (
+            <BsFillMoonFill className="text-dark dark:text-light" />
+          )
+        }
+        className="cursor-pointer"
+      ></ToggleSwitch>
+    </div>
   );
 };
 
