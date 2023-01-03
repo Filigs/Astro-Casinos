@@ -18,8 +18,8 @@ export const links = [
   },
   {
     id: 4,
-    title: "Admin",
-    href: "/admin",
+    title: "Post News",
+    href: "/submitNews",
   },
   {
     id: 5,

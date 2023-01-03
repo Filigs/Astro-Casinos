@@ -96,8 +96,7 @@ a {
   }
 
   button {
-    @apply px-5 py-2.5 m-4 lg:mx-8 font-semibold tracking-wide text-lg lg:text-xl rounded-xl lg:px-8 lg:py-4;
-    @apply shadow-lg;
+    @apply px-4 py-2 text-lg font-semibold tracking-wide lg:text-xl rounded-xl lg:px-8 lg:py-4;
     @apply bg-transparent dark:bg-transparent;
     @apply border-2 border-borderLight dark:border-borderDark;
     @apply hover:bg-borderLight dark:hover:bg-borderDark;
