@@ -1,4 +1,3 @@
-import PostNews from "../components/admin/postForm";
 import Head from "next/head";
 
 function News() {
@@ -12,9 +11,7 @@ function News() {
         {/* */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="w-full h-full text-center lg:text-8xl lg:my-40">
-        Coming soon...
-      </main>
+      <main>Coming soon...</main>
     </div>
   );
 }
