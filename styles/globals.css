@@ -39,7 +39,7 @@ a {
     @apply drop-shadow-lg;
     @apply border border-slate-200 dark:border-slate-700;
     /* @apply px-4 py-2 md:px-6 lg:px-8 rounded-xl ; */
-    @apply px-3 py-2 lg:py-4 lg:px-6 rounded-xl;
+    @apply px-6 py-4 lg:py-8 lg:px-12 rounded-xl;
     @apply mb-3 md:mb-4 lg:mb-5;
     @apply mx-4;
     @apply gap-4;
@@ -78,31 +78,36 @@ a {
   } */
   textarea {
     @apply bg-transparent dark:bg-transparent;
-    @apply placeholder-slate-400;
+    @apply placeholder-placeholderColor;
     @apply border-0;
     @apply block w-full p-4 mx-auto text-sm font-light rounded-xl;
     @apply outline outline-2 outline-offset-8 outline-borderLight focus:outline-dark dark:focus:outline-light dark:outline-borderDark;
   }
   input {
     @apply bg-transparent dark:bg-transparent;
-    @apply placeholder-slate-500;
+    @apply placeholder-placeholderColor;
     @apply border-b-2 border-b-borderLight dark:border-b-borderDark;
     @apply focus:outline-none;
     @apply inline-block w-full p-4 mx-auto text-sm font-light;
   }
   label {
-    @apply inline-block px-4 py-2 mb-4 text-lg font-normal bg-transparent lg:mb-8;
-    @apply md:text-xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
+    @apply block px-4 py-2 mb-4 text-lg font-bold tracking-wide bg-transparent lg:mb-8;
+    @apply text-center md:text-xl lg:text-2xl xl:text-3xl text-dark dark:text-light md:text-start;
   }
 
-  button {
-    @apply px-5 py-2.5 m-2 lg:mx-4 font-semibold tracking-wide text-lg lg:text-xl rounded-xl lg:px-8 lg:py-4;
+  /* button {
+    @apply px-5 py-2.5 m-4 lg:mx-8 font-semibold tracking-wide text-lg lg:text-xl rounded-xl lg:px-8 lg:py-4;
+    @apply shadow-lg;
     @apply bg-transparent dark:bg-transparent;
-    @apply border-2 border-borderLight dark:border-borderDark;
+    @apply border border-borderLight dark:border-borderDark;
     @apply hover:bg-borderLight dark:hover:bg-borderDark;
+  } */
+  form#newsForm {
+    @apply grid lg:grid-flow-row;
   }
-  form#admin {
-    @apply grid grid-flow-row-dense pb-5 lg:pb-10;
+
+  form#inputContainer {
+    @apply border-2 border-borderLight;
   }
 
   form#searchBar {
@@ -141,6 +146,27 @@ a {
     @apply lg:mx-4;
     @apply items-center justify-center h-full;
   }
+  /* admin page container  */
+  div.postNewsPage {
+    @apply px-6 py-4 lg:py-8 lg:px-12 rounded-xl;
+    @apply my-3 md:my-4 lg:my-5;
+    @apply mx-4;
+    @apply drop-shadow-lg;
+  }
+  div.inputDiv {
+    @apply pb-4 lg:pb-8;
+  }
+  div.inputGroup {
+    @apply px-6 py-4 lg:py-8 lg:px-12 rounded-xl;
+    @apply shadow-lg;
+  }
+
+  /* space between form elements */
+
+  form div {
+    @apply mb-3 md:mb-4 lg:mb-5;
+  }
+
   /* Overlay when opening burger */
 
   button.openBurger {

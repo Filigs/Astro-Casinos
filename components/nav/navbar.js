@@ -24,9 +24,7 @@ export default function NavBar() {
                 </Link>
               </div>
               <div className="shrink">
-                <button className="openBurger outline-0">
-                  <ThemeSwitch />
-                </button>
+                <ThemeSwitch />
               </div>
             </div>
           </>

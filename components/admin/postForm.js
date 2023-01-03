@@ -1,4 +1,7 @@
-import InputNewsBanner from "./form/banner";
+import NewsFormBanner from "./form/banner";
+import NewsFormContent from "./form/content";
+import NewsFormTitle from "./form/title";
+import NewsFormTags from "./form/tags";
 /* 
 
 fazer slug do link
@@ -26,36 +29,37 @@ meta description (string) e.g: "Hello world. Bye world"(no paragraph)
 
 export default function PostNews() {
   return (
-    <section>
-      <form id="admin">
-        <div className="grid gap-y-4 lg:gap-8 lg:py-10 lg:grid lg:grid-flow-row-dense">
+    <div className="postNewsPage">
+      <form id="newsForm">
+        {/* inputs */}
+        <div className="grid md:inputGroup">
           {/*  title */}
-          <div className="text-center lg:grid lg:pb-10">
-            <label htmlFor="newsTitle" alt="Label for the news title input">
-              Titulo da Noticia
-            </label>
-            <input type="text" id="newsTitle" placeholder="Titulo da noticia" />
+          <div className="inputDiv lg:grid">
+            <NewsFormTitle />
           </div>
           {/* Content */}
-          <div className="pb-10 text-center">
-            <label htmlFor="newsBody" alt="Label for the news body input">
-              Corpo da Noticia
-            </label>
-            <textarea id="newsBody" rows="20" placeholder="Corpo do post" />
+          <div className="inputDiv">
+            <NewsFormContent />
           </div>
           {/* Banner */}
-          <div>
-            <InputNewsBanner />
+          <div className="justify-center inputDiv">
+            <NewsFormBanner />
           </div>
-          {/* Form buttons */}
-          <div className="flex flex-row-reverse w-full justify-evenly lg:justify-start lg:mt-4">
-            <button type="button" className=" text-cta">
-              Submit
-            </button>
-            <button type="button">Preview</button>
+          {/* tags */}
+          <div className="inputDiv">
+            <NewsFormTags />
           </div>
         </div>
+        {/* Form buttons */}
+        <div className="flex justify-center w-full">
+          <button type="button" id="previewForm">
+            Preview
+          </button>
+          <button type="button" className=" text-cta" id="submitForm">
+            Submit
+          </button>
+        </div>
       </form>
-    </section>
+    </div>
   );
 }

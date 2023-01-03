@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
-export default function InputNewsBanner({ uid, url, size, onUpload }) {
+export default function NewsFormBanner({ uid, url, size, onUpload }) {
   const supabase = useSupabaseClient();
   const [bannerUrl, setBannerUrl] = useState(null);
   const [uploading, setUploading] = useState(false);
@@ -57,22 +57,17 @@ export default function InputNewsBanner({ uid, url, size, onUpload }) {
   };
 
   return (
-    <div className="grid items-center justify-center mx-auto text-center">
+    <div className="items-center block text-center ">
       {bannerUrl ? (
-        <Image
-          className="mb-2 rounded-full lg:mb-4"
-          src={bannerUrl}
-          id={"banner"}
-          alt="Banner"
-          height={size}
-          width={size}
-        />
+        <>
+          {"Banner has been uploaded successfully. "} {bannerUrl}
+        </>
       ) : (
         <div />
       )}
-      <div className>
+      <div>
         <label>{"Banner"}</label>
-        <div className="lg:flex">
+        <div className="block md:flex ">
           <input
             className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-borderLight dark:file:bg-borderDark file:text-dark dark:file:text-light hover:file:bg-slate-200 dark:hover:file:bg-slate-600"
             type="file"
