@@ -102,7 +102,7 @@ export default function Account({ session }) {
           />
         </div>
       </div>
-      <div className="flex py-2 px-4 justify-center">
+      <div className="flex justify-center px-4 py-2">
         <button
           className="bg-success dark:bg-success"
           onClick={() => updateProfile({ username, website, avatar_url })}

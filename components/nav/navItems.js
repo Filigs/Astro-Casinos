@@ -19,11 +19,11 @@ export const links = [
   {
     id: 4,
     title: "Post News",
-    href: "/submitNews",
+    href: "/profile/news/upload",
   },
   {
     id: 5,
     title: "Account Settings",
-    href: "/user",
+    href: "/profile/user",
   },
 ];

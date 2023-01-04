@@ -51,7 +51,7 @@ export default function PostNews() {
           </div>
         </div>
         {/* Form buttons */}
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full gap-4">
           <button type="button" id="previewForm">
             Preview
           </button>
