@@ -7,6 +7,7 @@ module.exports = {
     "./components/**.{js,ts,jsx,tsx}",
     "./components/**/**.{js,ts,jsx,tsx}",
     "./components/**/**/**.{js,ts,jsx,tsx}",
+    "./components/Users/**/**/**.{js,ts,jsx,tsx}",
     "./node_modules/flowbite-react/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html",

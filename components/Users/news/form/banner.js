@@ -40,7 +40,7 @@ export default function NewsFormBanner({ uid, url, onUpload }) {
 
       let { error: uploadError } = await supabase.storage
         .from("news-images")
-        .upload(filePath, file, { upsert: true });
+        .upload(filePath, file, { upsert: false });
 
       if (uploadError) {
         throw uploadError;

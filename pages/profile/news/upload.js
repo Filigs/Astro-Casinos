@@ -1,4 +1,4 @@
-import PostNews from "../components/admin/postForm";
+import PostNews from "components/Users/news/postForm";
 import Head from "next/head";
 
 function Admin() {
