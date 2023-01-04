@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
-export default function NewsFormBanner({ uid, url, size, onUpload }) {
+export default function NewsFormBanner({ uid, url, onUpload }) {
   const supabase = useSupabaseClient();
   const [bannerUrl, setBannerUrl] = useState(null);
   const [uploading, setUploading] = useState(false);
@@ -76,9 +75,6 @@ export default function NewsFormBanner({ uid, url, size, onUpload }) {
             onChange={uploadBanner}
             disabled={uploading}
           />
-          <button htmlFor="single">
-            {uploading ? "Uploading ..." : "Upload"}
-          </button>
         </div>
       </div>
     </div>
