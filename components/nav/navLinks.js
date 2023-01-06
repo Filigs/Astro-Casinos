@@ -1,5 +1,3 @@
-import ThemeSwitch from "../theme";
-import SearchBar from "./searchBar/search";
 import { links as navItems } from "./navItems";
 import Link from "next/link";
 
@@ -12,16 +10,9 @@ export default function NavLinks() {
     );
   });
   return (
-    <div className="flex items-center justify-around w-full px-4 py-2 overflow-hidden text-center align-middle whitespace-nowrap ">
-      <div id="dark">
-        <ThemeSwitch />
-      </div>
+    <div className="items-center justify-center block w-full overflow-hidden text-center align-middle whitespace-nowrap ">
       <div>
         <ul className={"grid grid-flow-col items-center"}>{listItems}</ul>
-      </div>
-
-      <div>
-        <SearchBar />
       </div>
     </div>
   );

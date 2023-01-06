@@ -29,7 +29,7 @@ meta description (string) e.g: "Hello world. Bye world"(no paragraph)
 
 export default function PostNews() {
   return (
-    <div className="postNewsPage">
+    <section>
       <form id="newsForm">
         {/* inputs */}
         <div className="grid md:inputGroup">
@@ -60,6 +60,6 @@ export default function PostNews() {
           </button>
         </div>
       </form>
-    </div>
+    </section>
   );
 }

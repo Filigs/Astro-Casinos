@@ -16,6 +16,11 @@ module.exports = {
     extend: {
       colors: {
         // // //  Light mode https://colorhunt.co/palette/579bb1e1d7c6ece8ddf8f4ea
+        blueMedium: "#579BB1",
+        vanillaDark: "#E1D7C6",
+        vanillaMedium: "#ECE8DD",
+        vanillaLight: "#F8F4EA",
+
         // // text
 
         light: "#ffffff", // White
@@ -25,10 +30,10 @@ module.exports = {
 
         // Backgrounds
 
-        bgLight: "#FFFFFF", // Light Background
+        bgLight: "#ECE8DD", // Light Background
         bgDark: "#0f172a", //darkmode fullycrypto
 
-        bgSecondary: "#F8F4EA", // light mode container
+        bgSecondary: "#FFFFFF", // light mode container
 
         bgSecondaryDark: "#1e293b", // dark mode container backgrounds
 
@@ -46,7 +51,7 @@ module.exports = {
 
         borderLight: "#ECE8DD", // Vanilla mais escuro
         borderDark: "#334155", // slate-700
-        footer: "#262626", // neutral-900 bg footer
+        footer: "#0c4a6e", // slate-800 bg footer
 
         // background colors for booleans
 

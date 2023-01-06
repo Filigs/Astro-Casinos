@@ -4,6 +4,7 @@ import NavLinks from "./navLinks";
 import ThemeSwitch from "../theme";
 import React from "react";
 import Menu from "./Menu";
+// import SearchBar from "./searchBar/search";
 
 export default function NavBar() {
   const isBreakpoint = ViewportHook(850); //mobile viewport
@@ -30,15 +31,23 @@ export default function NavBar() {
           </>
         ) : (
           // breakpoint between mobile and desktop
-          <div className="flex flex-col flex-wrap items-center justify-between px-3 py-1 text-center ">
+
+          <div className="grid items-center justify-between grid-flow-col px-2 py-1 text-center ">
             <div id="navLogo">
               <Link href="/" passHref>
                 VolaCrypto
               </Link>
             </div>
-            <>
+            <div className="">
               <NavLinks />
-            </>
+            </div>
+
+            {/* <div>
+              <SearchBar />
+            </div> */}
+            <div id="dark">
+              <ThemeSwitch />
+            </div>
           </div>
         )}
       </div>

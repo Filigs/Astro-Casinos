@@ -34,24 +34,33 @@ a {
 @layer base {
   /* parent element from components */
   section {
-    @apply bg-bgSecondary dark:bg-bgSecondaryDark;
+    @apply bg-light dark:bg-bgSecondaryDark;
     @apply text-dark dark:text-light;
     @apply drop-shadow-lg;
-    @apply border border-slate-200 dark:border-slate-700;
+    /* @apply border border-stone-200 dark:border-stone-700; */
     /* @apply px-4 py-2 md:px-6 lg:px-8 rounded-xl ; */
-    @apply px-6 py-4 lg:py-8 lg:px-12 rounded-xl;
+    @apply px-4 py-2 rounded-xl;
     @apply mb-3 md:mb-4 lg:mb-5;
     @apply mx-4;
     @apply gap-4;
     @apply block;
   }
   footer {
-    @apply p-4 bg-bgDark dark:bg-slate-300 sm:p-6;
-    @apply border-t border-t-slate-50 dark:border-t-slate-800;
+    @apply p-4 bg-bgDark dark:bg-stone-300 sm:p-6;
+  }
+
+  /* Gradient backgrounds */
+
+  .gradientLight {
+    @apply bg-gradient-to-r from-vanillaLight to-vanillaMedium;
+  }
+
+  .gradientDocument {
+    @apply bg-gradient-to-r from-blueMedium to-sky-600;
   }
 
   nav div ul li {
-    @apply px-2 py-2 text-base font-light text-center text-dark dark:text-light xl:text-lg 2xl:text-xl hover:underline;
+    @apply mx-2 text-base font-light text-center text-dark dark:text-light hover:underline;
   }
 
   footer div ul li,
@@ -59,14 +68,13 @@ a {
     @apply px-2 py-1 text-base font-medium text-light dark:text-dark xl:text-lg;
   }
   footer #link {
-    @apply text-light dark:text-dark hover:text-slate-300 dark:hover:text-slate-700 hover:underline;
+    @apply text-light dark:text-dark hover:text-stone-300 dark:hover:text-stone-700 hover:underline;
   }
   nav {
-    @apply z-10 drop-shadow-sm bg-bgSecondary dark:bg-bgSecondaryDark lg:z-0;
-
+    @apply z-10 drop-shadow-lg bg-light dark:bg-bgSecondaryDark lg:z-0;
     @apply w-full px-4 py-2;
     @apply sticky inset-x-0 top-0 lg:relative;
-    @apply border-b border-b-borderLight dark:border-b-borderDark;
+    /* @apply border-b border-b-borderLight dark:border-b-borderDark; */
     @apply text-dark dark:text-light;
   }
   nav #dark {
@@ -99,7 +107,7 @@ a {
     @apply px-4 py-2 text-lg font-semibold tracking-wide lg:text-xl rounded-xl lg:px-8 lg:py-4;
     @apply bg-transparent dark:bg-transparent;
     @apply border-2 border-borderLight dark:border-borderDark;
-    @apply hover:bg-borderLight dark:hover:bg-borderDark;
+    @apply hover:bg-blueMedium dark:hover:bg-borderDark;
   }
   form#newsForm {
     @apply grid lg:grid-flow-row;
@@ -121,7 +129,7 @@ a {
 
   /* nav logo */
   nav #navLogo {
-    @apply items-center justify-center w-full px-4 py-2 font-serif text-2xl italic font-black tracking-widest lg:text-2xl xl:text-3xl text-dark dark:text-light justify-items-center;
+    @apply items-center justify-center font-serif text-lg italic font-black tracking-widest lg:text-xl xl:text-2xl text-dark dark:text-light justify-items-center;
   }
   nav #burger {
     @apply text-2xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
@@ -133,31 +141,26 @@ a {
     @apply drop-shadow-md;
   }
   div#latestNewsCard {
-    @apply border border-slate-200 dark:border-slate-700;
+    @apply border border-stone-200 dark:border-stone-700;
   }
   /* news carousel */
 
   div#newsCardCarousel {
     @apply grid grid-cols-2 rounded-xl;
-    @apply bg-borderLight dark:bg-borderDark;
+    @apply bg-light dark:bg-borderDark;
     @apply text-dark dark:text-light;
     @apply drop-shadow-lg;
     @apply lg:mx-4;
     @apply items-center justify-center h-full;
   }
   /* admin page container  */
-  div.postNewsPage {
-    @apply px-6 py-4 lg:py-8 lg:px-12 rounded-xl;
-    @apply my-3 md:my-4 lg:my-5;
-    @apply mx-4;
-    @apply drop-shadow-lg;
-  }
+
   div.inputDiv {
     @apply pb-4 lg:pb-8;
   }
   div.inputGroup {
     @apply px-6 py-4 lg:py-8 lg:px-12 rounded-xl;
-    @apply shadow-lg;
+    /* @apply shadow-lg; */
   }
 
   /* space between form elements */
@@ -184,7 +187,7 @@ a {
   }
   .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__container {
     visibility: visible;
-    transform: translate3d(0, 0, 0) !important;
+    transform: transtone3d(0, 0, 0) !important;
   }
   .EZDrawer .EZDrawer__overlay {
     display: none;
