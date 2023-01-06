@@ -5,7 +5,7 @@ export default function LatestNews() {
   const listItems = iteration.map((item) => {
     return (
       <div
-        className="grid grid-cols-2 bg-bgContainer dark:bg-bgContainerDark rounded-lg py-1.5 lg:py-3 px-3 lg:px-6 mx-auto"
+        className="grid grid-cols-2 bg-bgSecondary dark:bg-bgSecondaryDark rounded-lg py-1.5 lg:py-3 px-3 lg:px-6 mx-auto"
         id="latestNewsCard"
         key={item}
       >
