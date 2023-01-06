@@ -15,6 +15,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // // //  Light mode https://colorhunt.co/palette/579bb1e1d7c6ece8ddf8f4ea
         // // text
 
         light: "#ffffff", // White
@@ -24,15 +25,18 @@ module.exports = {
 
         // Backgrounds
 
-        bgLight: "#e2e8f0", // Light Background
+        bgLight: "#FFFFFF", // Light Background
         bgDark: "#0f172a", //darkmode fullycrypto
-        bgContainer: "#ffffff", // light mode container
-        bgContainerDark: "#1e293b", // dark mode container backgrounds
+
+        bgSecondary: "#F8F4EA", // light mode container
+
+        bgSecondaryDark: "#1e293b", // dark mode container backgrounds
+
         placeholderColor: "#64748b", // placeholder color
 
         // CTA
         cta: "#E76F51", // peach
-        info: "#264653", // teal escuro
+        info: "#579BB1", // teal escuro
         alert: "#E9C46A", //amarelo
 
         // ctaLight: "#7900FF", // indigo(medium)
@@ -40,7 +44,7 @@ module.exports = {
 
         // Borders
 
-        borderLight: "#cbd5e1", // slate-300
+        borderLight: "#ECE8DD", // Vanilla mais escuro
         borderDark: "#334155", // slate-700
         footer: "#262626", // neutral-900 bg footer
 

@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import Account from "../../components/Users/Account";
 import { Auth } from "@supabase/auth-ui-react";
 import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
