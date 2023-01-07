@@ -1,6 +1,7 @@
 // import Socials from "./socials";
 // import Link from "next/link";
 import { GrFacebook, GrInstagram, GrTwitter } from "react-icons/gr";
+import { SiFacebook } from "react-icons/si";
 import { items } from "./footerItems";
 import Link from "next/link";
 export default function Footer() {
@@ -24,7 +25,7 @@ export default function Footer() {
               "grid grid-flow-row md:grid-cols-2" +
               " lg:grid-cols-" +
               items.length +
-              " font-medium text-gray-300 gap-y-4 text-center justify-center transition-all delay-75 duration-100"
+              " font-medium text-light gap-y-4 text-center justify-center transition-all delay-75 duration-100"
             }
           >
             {itemList}
@@ -45,38 +46,33 @@ export default function Footer() {
               href="https://www.facebook.com/VolaCrypto-108524625431648"
               className=""
               target="_blank"
-              id="link"
+              id="socials"
             >
-              <GrFacebook
-                className="w-5 h-5"
+              <SiFacebook
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
+                id="socials"
               />
             </Link>
             <Link
               href="https://www.instagram.com/volacrypto/"
               target="_blank"
               className=""
-              id="link"
             >
               <GrInstagram
-                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
+                id="socials"
               />
             </Link>
-            <Link
-              href="https://twitter.com/Vola_crypto"
-              target="_blank"
-              id="link"
-            >
+            <Link href="https://twitter.com/Vola_crypto" target="_blank">
               <GrTwitter
-                className="w-5 h-5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
+                id="socials"
               />
             </Link>
           </div>

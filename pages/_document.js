@@ -54,7 +54,7 @@ class myDocument extends Document {
             `}
         </Script> */}
 
-        <body className="h-full antialiased transition-all duration-75 text-dark dark:bg-bgSecondaryDark dark:text-light scroll-smooth gradientDocument">
+        <body className="h-full antialiased transition-all duration-75 text-dark dark:text-light scroll-smooth bg-fillerLight">
           <Main />
           <NextScript />
         </body>

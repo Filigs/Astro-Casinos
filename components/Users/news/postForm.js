@@ -52,10 +52,10 @@ export default function PostNews() {
         </div>
         {/* Form buttons */}
         <div className="flex justify-center w-full gap-4">
-          <button type="button" id="previewForm">
+          <button type="button" className="gradientCta " id="previewForm">
             Preview
           </button>
-          <button type="button" className=" text-cta" id="submitForm">
+          <button type="button" className=" gradientDanger" id="submitForm">
             Submit
           </button>
         </div>

@@ -36,7 +36,7 @@ export default function Menu() {
           enableOverlay="true"
           zIndex={30}
           overlayOpacity={0.8}
-          className="text-dark dark:text-light bg-borderLight dark:bg-borderDark"
+          className="text-dark dark:text-light bg-fillerDark dark:bg-borderDark"
         >
           <>
             <ul>{itemList}</ul>

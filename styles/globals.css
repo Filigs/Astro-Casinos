@@ -34,10 +34,9 @@ a {
 @layer base {
   /* parent element from components */
   section {
-    @apply bg-light dark:bg-bgSecondaryDark;
+    @apply bg-fillerMedium dark:bg-bgSecondaryDark;
     @apply text-dark dark:text-light;
     @apply drop-shadow-lg;
-    /* @apply border border-stone-200 dark:border-stone-700; */
     /* @apply px-4 py-2 md:px-6 lg:px-8 rounded-xl ; */
     @apply px-4 py-2 rounded-xl;
     @apply mb-3 md:mb-4 lg:mb-5;
@@ -46,21 +45,23 @@ a {
     @apply block;
   }
   footer {
-    @apply p-4 bg-bgDark dark:bg-stone-300 sm:p-6;
+    @apply p-4 bg-cta dark:bg-stone-300 sm:p-6;
   }
 
   /* Gradient backgrounds */
 
   .gradientLight {
-    @apply bg-gradient-to-r from-vanillaLight to-vanillaMedium;
+    @apply font-bold tracking-wide bg-gradient-to-br from-fillerMedium to-fillerDark text-light;
+  }
+  .gradientCta {
+    @apply font-bold tracking-wide bg-gradient-to-br from-cta to-orange-600 text-light hover:bg-ctaHover;
   }
 
-  .gradientDocument {
-    @apply bg-gradient-to-r from-blueMedium to-sky-600;
+  .gradientDanger {
+    @apply font-bold tracking-wide bg-gradient-to-br from-danger to-rose-500 text-light hover:bg-rose-300;
   }
-
   nav div ul li {
-    @apply mx-2 text-base font-light text-center text-dark dark:text-light hover:underline;
+    @apply mx-2 text-base font-medium tracking-wide text-center text-light hover:underline hover:text-fillerDark;
   }
 
   footer div ul li,
@@ -68,17 +69,19 @@ a {
     @apply px-2 py-1 text-base font-medium text-light dark:text-dark xl:text-lg;
   }
   footer #link {
-    @apply text-light dark:text-dark hover:text-stone-300 dark:hover:text-stone-700 hover:underline;
+    @apply text-light dark:text-dark hover:text-fillerDark dark:hover:text-stone-700 hover:underline;
+  }
+  footer #socials {
+    @apply text-xl fill-white hover:fill-fillerDark;
   }
   nav {
-    @apply z-10 drop-shadow-lg bg-light dark:bg-bgSecondaryDark lg:z-0;
+    @apply z-10 drop-shadow-lg gradientCta dark:bg-bgSecondaryDark lg:z-0;
     @apply w-full px-4 py-2;
     @apply sticky inset-x-0 top-0 lg:relative;
-    /* @apply border-b border-b-borderLight dark:border-b-borderDark; */
     @apply text-dark dark:text-light;
   }
-  nav #dark {
-    @apply px-2 py-2 text-base text-dark dark:text-light lg:text-lg xl:text-xl md:border-2 md:rounded-full md:border-dark md:dark:border-light;
+  nav #switch {
+    @apply text-base fill-light lg:text-lg xl:text-xl;
   }
   /* Need to apply rounded-xl whenever I get dynamic images 
   #newsBanner {
@@ -89,12 +92,12 @@ a {
     @apply placeholder-placeholderColor;
     @apply border-0;
     @apply block w-full p-4 mx-auto text-sm font-light rounded-xl;
-    @apply outline outline-2 outline-offset-8 outline-borderLight focus:outline-dark dark:focus:outline-light dark:outline-borderDark;
+    @apply outline outline-2 outline-offset-8 outline-cta focus:outline-ctaHover dark:focus:outline-light dark:outline-borderDark;
   }
   input {
-    @apply bg-transparent dark:bg-transparent;
+    @apply bg-fillerMedium dark:bg-transparent;
     @apply placeholder-placeholderColor;
-    @apply border-b-2 border-b-borderLight dark:border-b-borderDark;
+    @apply border-b-2 border-b-cta dark:border-b-borderDark;
     @apply focus:outline-none;
     @apply inline-block w-full p-4 mx-auto text-sm font-light;
   }
@@ -105,16 +108,11 @@ a {
 
   button {
     @apply px-4 py-2 text-lg font-semibold tracking-wide lg:text-xl rounded-xl lg:px-8 lg:py-4;
-    @apply bg-transparent dark:bg-transparent;
-    @apply border-2 border-borderLight dark:border-borderDark;
-    @apply hover:bg-blueMedium dark:hover:bg-borderDark;
+    @apply gradientCta dark:bg-transparent;
+    @apply hover:bg-ctaHover dark:hover:bg-borderDark;
   }
   form#newsForm {
     @apply grid lg:grid-flow-row;
-  }
-
-  form#inputContainer {
-    @apply border-2 border-borderLight;
   }
 
   form#searchBar {
@@ -124,12 +122,11 @@ a {
   *,
   html {
     @apply lg:transition-transform lg:duration-150;
-    @apply text-dark dark:text-light;
   }
 
   /* nav logo */
   nav #navLogo {
-    @apply items-center justify-center font-serif text-lg italic font-black tracking-widest lg:text-xl xl:text-2xl text-dark dark:text-light justify-items-center;
+    @apply items-center justify-center font-serif text-lg italic font-black tracking-widest lg:text-xl xl:text-2xl text-light justify-items-center;
   }
   nav #burger {
     @apply text-2xl lg:text-2xl xl:text-3xl text-dark dark:text-light;
@@ -140,9 +137,7 @@ a {
     @apply text-dark dark:text-light;
     @apply drop-shadow-md;
   }
-  div#latestNewsCard {
-    @apply border border-stone-200 dark:border-stone-700;
-  }
+
   /* news carousel */
 
   div#newsCardCarousel {
@@ -153,6 +148,7 @@ a {
     @apply lg:mx-4;
     @apply items-center justify-center h-full;
   }
+
   /* admin page container  */
 
   div.inputDiv {
@@ -172,7 +168,7 @@ a {
   /* Overlay when opening burger */
 
   button.openBurger {
-    @apply relative text-3xl text-center border-0 rounded-xl outline-2 outline-borderLight dark:outline-borderDark;
+    @apply relative text-3xl text-center border-0 rounded-xl outline-2 outline-fillerDark dark:outline-borderDark;
   }
   .drawerText {
     @apply my-16 text-xl font-bold text-dark dark:text-light;
