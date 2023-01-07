@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <div>
       <NavBar />
 
-      <main className="grid h-full grid-cols-1 gap-6 py-4 mx-auto bg-transparent dark:bg-transparent lg:max-w-screen-lg">
+      <main className="grid h-full grid-cols-1 gap-6 py-4 mx-auto mt-2 bg-transparent dark:bg-transparent lg:max-w-screen-lg">
         {children}
       </main>
       <Footer />

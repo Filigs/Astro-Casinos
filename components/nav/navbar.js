@@ -45,7 +45,7 @@ export default function NavBar() {
             {/* <div>
               <SearchBar />
             </div> */}
-            <div id="dark">
+            <div>
               <ThemeSwitch />
             </div>
           </div>

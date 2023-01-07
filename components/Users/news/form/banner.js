@@ -68,7 +68,7 @@ export default function NewsFormBanner({ uid, url, onUpload }) {
         <label>{"Banner"}</label>
         <div className="block md:flex ">
           <input
-            className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-borderLight dark:file:bg-borderDark file:text-dark dark:file:text-light hover:file:bg-slate-200 dark:hover:file:bg-slate-600"
+            className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:gradientCta dark:file:bg-borderDark file:text-light dark:file:text-light hover:file:bg-ctaHover dark:hover:file:bg-slate-600"
             type="file"
             id="single"
             accept="image/*"
