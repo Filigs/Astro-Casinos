@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SampleNew from "/public/topNewsSample.png";
 import { ViewportHook } from "../viewportHook";
+import Link from "next/link";
 
 const articles = [
   {
@@ -33,12 +34,13 @@ export default function TopCryptoNews() {
   const isBreakpoint = ViewportHook(1050);
   const listItems = articles.map((article) => {
     return (
-      <li
+      <Link
+        href="/"
         key={article.id}
-        className="px-2 py-2 font-normal border-t-0 border-b border-b-stone-300 last:border-b-0 "
+        className="px-2 py-2 font-normal border-t-0 border-b-2 first:pt-0 last:pb-0 hoverCta border-b-stone-300 last:border-b-0 "
       >
-        {article.title}
-      </li>
+        <li>{article.title}</li>
+      </Link>
     );
   });
 
