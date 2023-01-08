@@ -2,8 +2,7 @@ import Head from "next/head";
 // import FeaturedGuides from "../components/home/featuredGuides";
 import TopCryptoNews from "../components/home/featuredNews";
 import LatestNews from "../components/home/latestNews";
-import NewsCarousel from "../components/home/newsCarousel";
-
+import NewsCarousel from "../components/Users/news/carousel/carousel";
 function Home() {
   const titleName = "VolaCrypto.io";
 
