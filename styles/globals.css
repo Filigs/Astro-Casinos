@@ -144,15 +144,21 @@ a {
 
   /* news carousel */
 
-  div#newsCardCarousel {
+  div#newsCarouselCard {
     @apply grid grid-cols-2 rounded-xl;
-    @apply bg-light dark:bg-borderDark;
-    @apply text-dark dark:text-light;
-    @apply drop-shadow-lg;
-    @apply lg:mx-4;
+    @apply bg-gradient-to-br from-fillerMedium to-fillerDark dark:bg-borderDark;
+    @apply text-cta dark:text-cta;
+    @apply drop-shadow-sm;
+    @apply lg:mr-4 lg:last:mr-0 lg:ml-0;
+    @apply mx-4;
     @apply items-center justify-center h-full;
+    @apply cardHover;
   }
 
+  .cardHover {
+    @apply lg:hover:-translate-y-2 lg:hover:drop-shadow-xl lg:hover:cursor-pointer;
+    @apply duration-300 delay-75;
+  }
   /* admin page container  */
 
   div.inputDiv {

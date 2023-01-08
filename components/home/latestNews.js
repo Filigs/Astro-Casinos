@@ -5,7 +5,7 @@ export default function LatestNews() {
   const listItems = iteration.map((item) => {
     return (
       <div
-        className="grid grid-cols-2 bg-bgSecondary dark:bg-bgSecondaryDark rounded-xl "
+        className="grid grid-cols-2 bg-bgSecondary dark:bg-bgSecondaryDark rounded-xl cardHover"
         id="latestNewsCard"
         key={item}
       >
