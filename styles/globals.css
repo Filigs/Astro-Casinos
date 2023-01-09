@@ -145,7 +145,7 @@ a {
   /* news carousel */
 
   div#newsCarouselCard {
-    @apply grid grid-cols-2 rounded-xl;
+    @apply grid grid-cols-2 overflow-hidden rounded-xl;
     @apply bg-gradient-to-br from-fillerMedium to-fillerDark dark:bg-borderDark;
     @apply text-cta dark:text-cta;
     @apply drop-shadow-sm;
@@ -153,6 +153,7 @@ a {
     @apply mx-4;
     @apply items-center justify-center h-full;
     @apply cardHover;
+    @apply flex-shrink-0 w-96 lg:w-80;
   }
 
   .cardHover {
@@ -211,4 +212,26 @@ a {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
   }
   /* end of drawer component */
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e58b00 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e58b00;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
